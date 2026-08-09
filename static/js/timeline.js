@@ -60,6 +60,17 @@
     return e;
   }
 
+  // 5-pointed star polygon, same visual footprint as the circle marker it replaces.
+  function starPoints(cx, cy, outerR, innerR) {
+    var pts = [];
+    for (var i = 0; i < 10; i++) {
+      var angle = (Math.PI / 5) * i - Math.PI / 2;
+      var r = i % 2 === 0 ? outerR : innerR;
+      pts.push((cx + r * Math.cos(angle)).toFixed(2) + "," + (cy + r * Math.sin(angle)).toFixed(2));
+    }
+    return pts.join(" ");
+  }
+
   // axis
   svg.appendChild(el("line", { x1: MARGIN_L, y1: AXIS_Y, x2: LOGICAL_WIDTH - MARGIN_R, y2: AXIS_Y, class: "axis-line" }));
 
@@ -78,8 +89,11 @@
     var g = el("g", { "data-key": b.key });
 
     g.appendChild(el("line", { x1: b._x, y1: AXIS_Y, x2: b._x, y2: y, class: "stem" }));
-    var circle = el("circle", { cx: b._x, cy: y, r: RADIUS, class: "marker " + b.confidence_tier });
-    g.appendChild(circle);
+    var markerClass = "marker " + b.confidence_tier + (b.favorite ? " favorite" : "");
+    var marker = b.favorite
+      ? el("polygon", { points: starPoints(b._x, y, RADIUS * 1.35, RADIUS * 1.35 * 0.45), class: markerClass })
+      : el("circle", { cx: b._x, cy: y, r: RADIUS, class: markerClass });
+    g.appendChild(marker);
 
     var label = el("text", {
       x: b._x, y: y - RADIUS - 5, class: "marker-label", "text-anchor": "middle"
@@ -93,7 +107,7 @@
     g.addEventListener("click", function () { openDetail(b); });
 
     svg.appendChild(g);
-    markerNodes[b.key] = { g: g, circle: circle, label: label };
+    markerNodes[b.key] = { g: g, circle: marker, label: label };
   });
 
   // ---- tooltip ----
@@ -167,9 +181,14 @@
   // ---- header ----
   var totalResearched = DATA.total_researched || (breeds.length + undated.length);
   var popularityFilter = DATA.popularity_filter;
+  var favoritesIncluded = DATA.favorites_included_beyond_filter || 0;
+  var favoritesNote = favoritesIncluded
+    ? " plus " + favoritesIncluded + " favorite" + (favoritesIncluded === 1 ? "" : "s")
+    : "";
   document.getElementById("header-sub").textContent = popularityFilter
-    ? breeds.length + " of the top " + popularityFilter + " most popular breeds plotted, " +
-      undated.length + " undated (" + totalResearched + " researched overall, of ~628 in the full breed dataset)."
+    ? breeds.length + " of the top " + popularityFilter + " most popular breeds" + favoritesNote +
+      " plotted, " + undated.length + " undated (" + totalResearched +
+      " researched overall, of ~628 in the full breed dataset)."
     : breeds.length + " breeds plotted, " + undated.length + " undated " +
       "(" + totalResearched + " of ~628 in the full breed dataset researched so far).";
 

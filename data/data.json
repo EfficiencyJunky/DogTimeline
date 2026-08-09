@@ -14,7 +14,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/270g05-en.pdf",
       "year": -7474,
-      "years_before_present": 9500
+      "years_before_present": 9500,
+      "favorite": false
     },
     {
       "key": "chow-chow",
@@ -29,7 +30,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/chow-chow/",
       "year": -6274,
-      "years_before_present": 8300
+      "years_before_present": 8300,
+      "favorite": false
     },
     {
       "key": "norwegian-elkhound",
@@ -44,7 +46,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/242g05-en.pdf",
       "year": -4000,
-      "years_before_present": 6026
+      "years_before_present": 6026,
+      "favorite": false
     },
     {
       "key": "ibizan-hound",
@@ -59,7 +62,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/089g05-fr.pdf",
       "year": -3400,
-      "years_before_present": 5426
+      "years_before_present": 5426,
+      "favorite": false
     },
     {
       "key": "akita",
@@ -74,7 +78,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/akita/",
       "year": -2974,
-      "years_before_present": 5000
+      "years_before_present": 5000,
+      "favorite": false
     },
     {
       "key": "basenji",
@@ -89,7 +94,24 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/043g05-en.pdf",
       "year": -2700,
-      "years_before_present": 4726
+      "years_before_present": 4726,
+      "favorite": false
+    },
+    {
+      "key": "middle-asian-ovtcharka",
+      "name": "Middle Asian Ovtcharka",
+      "origin_country": "Central Asia (region: Caspian Sea to China, Southern Ural to Afghanistan)",
+      "estimate_type": "era_bce_ce",
+      "estimate_value_raw": "~2000 BCE",
+      "estimate_note": "FCI-St N\u00b0335 (2010): \"formed as a breed from natural selection during more than four thousand years\" (= pre-~2010 BCE). \"The work with the breed started in the USSR in the 1930s.\" Secondary: Some sources say the 4000-year claim is overstated for the modern breed specifically (it was formalized in USSR 1930s), while the ancient pastoral dog type of Central Asia is genuinely old. No peer-reviewed genetic study specifically confirming the 4000-year claim for this breed type found in this session.",
+      "recognition_year": "",
+      "confidence_tier": "anchor",
+      "notes": "The FCI says \"more than four thousand years\" for the type, placing origin ~2000 BCE (consistent with Bronze Age Central Asian pastoral cultures). The modern standardized breed was formalized in the USSR in the 1930s. This parallels other \"ancient type, modern standardization\" breeds. The 4000-year ancient-type claim is plausible given the region's pastoral history, but has not been confirmed by a specific peer-reviewed genetics study (cf. Chow Chow, which has genomic confirmation). Flag for a future targeted genetics search on Central Asian Shepherd Dog divergence time.",
+      "primary_source_registry": "FCI",
+      "primary_source_url": "https://www.fci.be/Nomenclature/Standards/335g02-en.pdf",
+      "year": -2000,
+      "years_before_present": 4026,
+      "favorite": true
     },
     {
       "key": "central-asian-shepherd-dog",
@@ -104,7 +126,40 @@
       "primary_source_registry": "UKC",
       "primary_source_url": "https://www.ukcdogs.com/central-asian-shepherd-dog",
       "year": -1974,
-      "years_before_present": 4000
+      "years_before_present": 4000,
+      "favorite": false
+    },
+    {
+      "key": "dingo",
+      "name": "Dingo",
+      "origin_country": "Australia (via Asia)",
+      "estimate_type": "years_ago",
+      "estimate_value_raw": "~3,500 years ago",
+      "estimate_note": "CKC page Cloudflare-blocked; Wikipedia and peer-reviewed studies used. Wikipedia: \"Temporal range: Holocene (3,450 years BP \u2013 recent).\" Scientific Reports 2018 (Madura Cave): dingoes in southern Australia between 3348 and 3081 years ago (direct radiocarbon dating). Genetic studies suggest origins in Asia (likely China via Southeast Asia); arrival possibly connected to Indian genome influx ~4000 BP.",
+      "recognition_year": "",
+      "confidence_tier": "anchor",
+      "notes": "The dingo is a feral/semi-wild dog, not a kennel-standardized breed \u2014 its presence on this list reflects its cultural significance and unique lineage. Best arrival estimate: ~3,450 BP (~1500 BCE), based on Madura Cave radiocarbon dating (oldest confirmed bones in Australia). Closely related to New Guinea Singing Dog (shared lineage ~3500 BP with Oceanic human migration). Asian origin (likely China via Southeast Asia/Taiwan). Note: some sources say 3000-8000 years ago \u2014 the 3450 BP Wikipedia temporal range is the most supported figure. See supplemental file for full citation details.",
+      "primary_source_registry": "CKC",
+      "primary_source_url": "https://ckcusa.com/breeds/dingo/",
+      "year": -1474,
+      "years_before_present": 3500,
+      "favorite": true
+    },
+    {
+      "key": "new-guinea-singing-dog",
+      "name": "New Guinea Singing Dog",
+      "origin_country": "Papua New Guinea",
+      "estimate_type": "years_ago",
+      "estimate_value_raw": "~3,500 years ago",
+      "estimate_note": "CKC page Cloudflare-blocked; Wikipedia and PNAS studies used. Genetic studies: \"the New Guinea singing dog lineage diverged from East Asian dog populations around 3,500 years ago, coinciding with human dispersal to Oceania.\" PNAS 2021: New Guinea Highland wild dogs are genetically basal to both the dingo and the NGSD. First Western documentation: Torres expedition 1606 (dogs described as \"small dumb dogs that neither bark nor howl\").",
+      "recognition_year": "",
+      "confidence_tier": "anchor",
+      "notes": "The NGSD is a wild/feral dog isolated in the New Guinea Highlands \u2014 not a standardized kennel breed. Its captive population is descended from a small number captured in the 1950s-70s. The wild population (New Guinea Highland wild dog) was rediscovered via camera traps in 2016 and confirmed genetically as the original NGSD (PNAS 2021). Shares ~3500-year origin timing with the dingo (both arrived with human dispersal into Oceania). First documented 1606 (Torres expedition); formally described 1897 (MacGregor, Mount Scratchley). See supplemental file.",
+      "primary_source_registry": "CKC",
+      "primary_source_url": "https://ckcusa.com/breeds/new-guinea-singing-dog/",
+      "year": -1474,
+      "years_before_present": 3500,
+      "favorite": true
     },
     {
       "key": "maltese",
@@ -119,7 +174,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/065g09-en.pdf",
       "year": -350,
-      "years_before_present": 2376
+      "years_before_present": 2376,
+      "favorite": false
     },
     {
       "key": "alaskan-malamute",
@@ -134,7 +190,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/alaskan-malamute/",
       "year": -200,
-      "years_before_present": 2226
+      "years_before_present": 2226,
+      "favorite": false
     },
     {
       "key": "chinese-shar-pei",
@@ -149,7 +206,24 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/309g02-en.pdf",
       "year": -200,
-      "years_before_present": 2226
+      "years_before_present": 2226,
+      "favorite": false
+    },
+    {
+      "key": "jindo",
+      "name": "Jindo",
+      "origin_country": "South Korea",
+      "estimate_type": "era_bce_ce",
+      "estimate_value_raw": "~0 BCE/CE",
+      "estimate_note": "FCI-St N\u00b0334: \"many authorities agree that this breed has existed for several thousands of years in the Island of Jindo... the Jindo Dog is indigenous to Korea.\" Genetics (PMC 2017, PLoS ONE 2017): \"the breed originated in Korea about 2,000 years ago.\" The FCI's \"several thousands\" is the lore; the genetics anchor is ~2000 years ago (~0 CE).",
+      "recognition_year": "1962",
+      "confidence_tier": "anchor",
+      "notes": "Natural Monument of Korea No. 53, designated 1962. Genetics confirm ~2000-year-old Korean indigenous breed with \"maternally unique phylogenetic history\" \u2014 not part of major phylogenetic groups. FCI standard (2004) says \"several thousands of years\" but genetics places it at the ~2000-year end of that range. Isolation on Jindo Island historically maintained breed purity. Shares ancestry with Akita within East Asian basal breeds.",
+      "primary_source_registry": "FCI",
+      "primary_source_url": "https://www.fci.be/Nomenclature/Standards/334g05-en.pdf",
+      "year": 0,
+      "years_before_present": 2026,
+      "favorite": true
     },
     {
       "key": "neapolitan-mastiff",
@@ -164,7 +238,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/neapolitan-mastiff/",
       "year": 50,
-      "years_before_present": 1976
+      "years_before_present": 1976,
+      "favorite": false
     },
     {
       "key": "tibetan-mastiff",
@@ -179,7 +254,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://images.akc.org/pdf/study_guides/tibetan_mastiff.pdf",
       "year": 350,
-      "years_before_present": 1676
+      "years_before_present": 1676,
+      "favorite": false
     },
     {
       "key": "irish-wolfhound",
@@ -194,7 +270,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/160g10-en.pdf",
       "year": 391,
-      "years_before_present": 1635
+      "years_before_present": 1635,
+      "favorite": false
     },
     {
       "key": "italian-greyhound",
@@ -209,7 +286,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/200g10-en.pdf",
       "year": 450,
-      "years_before_present": 1576
+      "years_before_present": 1576,
+      "favorite": false
     },
     {
       "key": "lhasa-apso",
@@ -224,7 +302,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/227g09-en.pdf",
       "year": 650,
-      "years_before_present": 1376
+      "years_before_present": 1376,
+      "favorite": false
     },
     {
       "key": "bloodhound",
@@ -239,7 +318,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/bloodhound/",
       "year": 650,
-      "years_before_present": 1376
+      "years_before_present": 1376,
+      "favorite": false
     },
     {
       "key": "kuvasz",
@@ -254,7 +334,24 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/kuvasz/",
       "year": 850,
-      "years_before_present": 1176
+      "years_before_present": 1176,
+      "favorite": false
+    },
+    {
+      "key": "greenland-dog",
+      "name": "Greenland Dog",
+      "origin_country": "Greenland",
+      "estimate_type": "era_bce_ce",
+      "estimate_value_raw": "~900-1000 CE",
+      "estimate_note": "FCI-St N\u00b0274 (2022): \"one of the world's oldest breeds and has since ancient times been the Inuits' only sledge dog\" \u2014 no specific date given. Secondary: 2025 Science study (Qimmeq genomes) found Inuit arrived in Greenland 800-1200 years ago (~800-1200 CE), bringing these dogs. Thule expansion across the American Arctic ~2000 BP (0 CE); deeper Siberian sled dog lineage ~9500 BP.",
+      "recognition_year": "",
+      "confidence_tier": "anchor",
+      "notes": "The Greenland Dog (Qimmeq) arrived in Greenland with Inuit/Thule peoples ~800-1200 CE. Genetics (2025 Science study) show the breed has remained genetically consistent back to the earliest known sled dogs. Shares deep sled dog lineage with Alaskan Malamute and Siberian Husky (Zhokhov Island ancestor ~9500 BP); see supplemental file. Origin date here refers to Greenland-specific establishment, not the broader Thule/Siberian sled dog lineage.",
+      "primary_source_registry": "FCI",
+      "primary_source_url": "https://www.fci.be/Nomenclature/Standards/274g05-en.pdf",
+      "year": 1000,
+      "years_before_present": 1026,
+      "favorite": true
     },
     {
       "key": "kangal-dog",
@@ -269,7 +366,8 @@
       "primary_source_registry": "UKC",
       "primary_source_url": "https://www.ukcdogs.com/kangal-dog",
       "year": 1050,
-      "years_before_present": 976
+      "years_before_present": 976,
+      "favorite": false
     },
     {
       "key": "corgi",
@@ -284,7 +382,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/039g01-en.pdf",
       "year": 1107,
-      "years_before_present": 919
+      "years_before_present": 919,
+      "favorite": false
     },
     {
       "key": "chihuahua",
@@ -299,7 +398,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/218g09-en.pdf",
       "year": 1168,
-      "years_before_present": 858
+      "years_before_present": 858,
+      "favorite": false
     },
     {
       "key": "basset-hound",
@@ -314,7 +414,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/163g06-en.pdf",
       "year": 1200,
-      "years_before_present": 826
+      "years_before_present": 826,
+      "favorite": false
     },
     {
       "key": "great-pyrenees",
@@ -329,7 +430,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "http://www.fci.be/Nomenclature/Standards/137g02-en.pdf",
       "year": 1350,
-      "years_before_present": 676
+      "years_before_present": 676,
+      "favorite": false
     },
     {
       "key": "mastiff",
@@ -344,7 +446,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/264g02-en.pdf",
       "year": 1350,
-      "years_before_present": 676
+      "years_before_present": 676,
+      "favorite": false
     },
     {
       "key": "english-setter",
@@ -359,7 +462,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/002g07-en.pdf",
       "year": 1350,
-      "years_before_present": 676
+      "years_before_present": 676,
+      "favorite": false
     },
     {
       "key": "vizsla",
@@ -374,7 +478,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/vizsla/",
       "year": 1350,
-      "years_before_present": 676
+      "years_before_present": 676,
+      "favorite": false
     },
     {
       "key": "shih-tzu",
@@ -389,7 +494,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/208g09-en.pdf",
       "year": 1368,
-      "years_before_present": 658
+      "years_before_present": 658,
+      "favorite": false
     },
     {
       "key": "borzoi",
@@ -404,7 +510,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/193g10-en.pdf",
       "year": 1450,
-      "years_before_present": 576
+      "years_before_present": 576,
+      "favorite": false
     },
     {
       "key": "beagle",
@@ -419,7 +526,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/161g06-en.pdf",
       "year": 1550,
-      "years_before_present": 476
+      "years_before_present": 476,
+      "favorite": false
     },
     {
       "key": "havanese",
@@ -434,7 +542,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/250g09-en.pdf",
       "year": 1550,
-      "years_before_present": 476
+      "years_before_present": 476,
+      "favorite": false
     },
     {
       "key": "bichon-frise",
@@ -449,7 +558,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/215g09-en.pdf",
       "year": 1550,
-      "years_before_present": 476
+      "years_before_present": 476,
+      "favorite": false
     },
     {
       "key": "papillon",
@@ -464,7 +574,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/077g09-en.pdf",
       "year": 1550,
-      "years_before_present": 476
+      "years_before_present": 476,
+      "favorite": false
     },
     {
       "key": "pug",
@@ -479,7 +590,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/253g09-en.pdf",
       "year": 1550,
-      "years_before_present": 476
+      "years_before_present": 476,
+      "favorite": false
     },
     {
       "key": "west-highland-white-terrier",
@@ -494,7 +606,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/west-highland-white-terrier/",
       "year": 1596,
-      "years_before_present": 430
+      "years_before_present": 430,
+      "favorite": false
     },
     {
       "key": "newfoundland",
@@ -509,7 +622,24 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "http://www.fci.be/nomenclature/Standards/050g02-en.pdf",
       "year": 1610,
-      "years_before_present": 416
+      "years_before_present": 416,
+      "favorite": false
+    },
+    {
+      "key": "dalmatian",
+      "name": "Dalmatian",
+      "origin_country": "Croatia",
+      "estimate_type": "year_range",
+      "estimate_value_raw": "1600-1630",
+      "estimate_note": "Dalmatians depicted on the altar painting \"Madonna with Jesus and Angels\" in Veli Losinj, Croatia, dating 1600-1630.",
+      "recognition_year": "1890",
+      "confidence_tier": "rich",
+      "notes": "FCI historical summary is unusually dense: church chronicles 1719 and 1737, Pennant's description 1771, Bewick 1790, first unofficial standard 1882, Dalmatian Club founded 1890, first FCI standard 1955.",
+      "primary_source_registry": "FCI",
+      "primary_source_url": "https://www.fci.be/Nomenclature/Standards/153g06-en.pdf",
+      "year": 1615,
+      "years_before_present": 411,
+      "favorite": true
     },
     {
       "key": "bulldog",
@@ -524,7 +654,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/149g02-en.pdf",
       "year": 1635,
-      "years_before_present": 391
+      "years_before_present": 391,
+      "favorite": false
     },
     {
       "key": "poodle-standard",
@@ -539,7 +670,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/172g09-en.pdf",
       "year": 1650,
-      "years_before_present": 376
+      "years_before_present": 376,
+      "favorite": false
     },
     {
       "key": "saint-bernard",
@@ -554,7 +686,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/061g02-en.pdf",
       "year": 1650,
-      "years_before_present": 376
+      "years_before_present": 376,
+      "favorite": false
     },
     {
       "key": "whippet",
@@ -569,7 +702,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/162g10-en.pdf",
       "year": 1685,
-      "years_before_present": 341
+      "years_before_present": 341,
+      "favorite": false
     },
     {
       "key": "pointer",
@@ -584,7 +718,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/pointer",
       "year": 1713,
-      "years_before_present": 313
+      "years_before_present": 313,
+      "favorite": false
     },
     {
       "key": "dachshund",
@@ -599,7 +734,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/148g04-en.pdf",
       "year": 1715,
-      "years_before_present": 311
+      "years_before_present": 311,
+      "favorite": false
     },
     {
       "key": "irish-setter",
@@ -614,7 +750,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/120g07-en.pdf",
       "year": 1750,
-      "years_before_present": 276
+      "years_before_present": 276,
+      "favorite": false
     },
     {
       "key": "soft-coated-wheaten-terrier",
@@ -629,7 +766,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/soft-coated-wheaten-terrier/",
       "year": 1750,
-      "years_before_present": 276
+      "years_before_present": 276,
+      "favorite": false
     },
     {
       "key": "english-foxhound",
@@ -644,7 +782,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/english-foxhound/",
       "year": 1750,
-      "years_before_present": 276
+      "years_before_present": 276,
+      "favorite": false
     },
     {
       "key": "pomeranian",
@@ -659,7 +798,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/097g05-en.pdf",
       "year": 1764,
-      "years_before_present": 262
+      "years_before_present": 262,
+      "favorite": false
     },
     {
       "key": "american-foxhound",
@@ -674,7 +814,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/303g06-en.pdf",
       "year": 1785,
-      "years_before_present": 241
+      "years_before_present": 241,
+      "favorite": false
     },
     {
       "key": "labrador-retriever",
@@ -689,7 +830,24 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/122g08-en.pdf",
       "year": 1785,
-      "years_before_present": 241
+      "years_before_present": 241,
+      "favorite": false
+    },
+    {
+      "key": "yakutian-laika",
+      "name": "Yakutian Laika",
+      "origin_country": "Russia",
+      "estimate_type": "year_range",
+      "estimate_value_raw": "1633-1958",
+      "estimate_note": "FCI-St N\u00b0365: Multiple anchors \u2014 \"archaeological discoveries confirm that the local people used dogs for sledding and hunting as far back as 8000 years ago. The very first references about dogs in this region date back to 1633. The first published account... Nicholas Witsen (Amsterdam, 1692). First description... 1843. First Breed Standard for the North-East Sled Dog was adopted in 1958.\" Year range here covers first historical reference (1633) to first formal standard (1958).",
+      "recognition_year": "1958",
+      "confidence_tier": "rich",
+      "notes": "Exceptionally well-documented origin with multiple dated references: archaeological evidence of local dog use 8000 BP, first historical reference 1633, first published account 1692 (Witsen, Amsterdam), first description \"dog of a special breed\" 1843, population census 1856 (15,157 sled dogs), first breed standard 1958. The 8000 BP archaeological claim is the Sakha/Yakut people using sled dogs generally \u2014 not necessarily the modern Yakutian Laika type specifically. The 1633 reference is the most defensible anchor for breed-level documentation.",
+      "primary_source_registry": "FCI",
+      "primary_source_url": "https://www.fci.be/Nomenclature/Standards/365g05-en.pdf",
+      "year": 1795,
+      "years_before_present": 231,
+      "favorite": true
     },
     {
       "key": "pharaoh-hound",
@@ -704,7 +862,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "http://www.fci.be/Nomenclature/Standards/248g05-en.pdf",
       "year": 1805,
-      "years_before_present": 221
+      "years_before_present": 221,
+      "favorite": false
     },
     {
       "key": "australian-shepherd",
@@ -719,7 +878,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/342g01-en.pdf",
       "year": 1805,
-      "years_before_present": 221
+      "years_before_present": 221,
+      "favorite": false
     },
     {
       "key": "scottish-deerhound",
@@ -734,7 +894,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/164g10-en.pdf",
       "year": 1815,
-      "years_before_present": 211
+      "years_before_present": 211,
+      "favorite": false
     },
     {
       "key": "weimaraner",
@@ -749,7 +910,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/weimaraner/",
       "year": 1815,
-      "years_before_present": 211
+      "years_before_present": 211,
+      "favorite": false
     },
     {
       "key": "gordon-setter",
@@ -764,7 +926,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/gordon-setter/",
       "year": 1815,
-      "years_before_present": 211
+      "years_before_present": 211,
+      "favorite": false
     },
     {
       "key": "parson-russell-terrier",
@@ -779,7 +942,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/parson-russell-terrier/",
       "year": 1819,
-      "years_before_present": 207
+      "years_before_present": 207,
+      "favorite": false
     },
     {
       "key": "american-bulldog",
@@ -794,7 +958,8 @@
       "primary_source_registry": "UKC",
       "primary_source_url": "https://www.ukcdogs.com/american-bulldog",
       "year": 1835,
-      "years_before_present": 191
+      "years_before_present": 191,
+      "favorite": false
     },
     {
       "key": "australian-cattle-dog",
@@ -809,7 +974,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "http://www.fci.be/nomenclature/standards/287g01-en.pdf",
       "year": 1845,
-      "years_before_present": 181
+      "years_before_present": 181,
+      "favorite": false
     },
     {
       "key": "leonberger",
@@ -824,7 +990,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/leonberger/",
       "year": 1846,
-      "years_before_present": 180
+      "years_before_present": 180,
+      "favorite": false
     },
     {
       "key": "kerry-blue-terrier",
@@ -839,7 +1006,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/kerry-blue-terrier/",
       "year": 1847,
-      "years_before_present": 179
+      "years_before_present": 179,
+      "favorite": false
     },
     {
       "key": "rough-collie",
@@ -854,7 +1022,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/156g01-en.pdf",
       "year": 1850,
-      "years_before_present": 176
+      "years_before_present": 176,
+      "favorite": false
     },
     {
       "key": "smooth-collie",
@@ -869,7 +1038,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/296g01-en.pdf",
       "year": 1850,
-      "years_before_present": 176
+      "years_before_present": 176,
+      "favorite": false
     },
     {
       "key": "miniature-pinscher",
@@ -884,7 +1054,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/miniature-pinscher/",
       "year": 1850,
-      "years_before_present": 176
+      "years_before_present": 176,
+      "favorite": false
     },
     {
       "key": "jack-russell-terrier",
@@ -899,7 +1070,8 @@
       "primary_source_registry": "UKC",
       "primary_source_url": "https://www.ukcdogs.com/jack-russell-terrier",
       "year": 1850,
-      "years_before_present": 176
+      "years_before_present": 176,
+      "favorite": false
     },
     {
       "key": "wire-fox-terrier",
@@ -914,7 +1086,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/wire-fox-terrier/",
       "year": 1850,
-      "years_before_present": 176
+      "years_before_present": 176,
+      "favorite": false
     },
     {
       "key": "bullmastiff",
@@ -929,7 +1102,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/bullmastiff/",
       "year": 1850,
-      "years_before_present": 176
+      "years_before_present": 176,
+      "favorite": false
     },
     {
       "key": "chesapeake-bay-retriever",
@@ -944,7 +1118,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://images.akc.org/pdf/judges/chesapeake_bay_retriever.pdf",
       "year": 1850,
-      "years_before_present": 176
+      "years_before_present": 176,
+      "favorite": false
     },
     {
       "key": "yorkshire-terrier",
@@ -959,7 +1134,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/086g03-en.pdf",
       "year": 1855,
-      "years_before_present": 171
+      "years_before_present": 171,
+      "favorite": false
     },
     {
       "key": "flat-coated-retriever",
@@ -974,7 +1150,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://images.akc.org/pdf/judges/groups/Sporting_Group.pdf",
       "year": 1860,
-      "years_before_present": 166
+      "years_before_present": 166,
+      "favorite": false
     },
     {
       "key": "airedale-terrier",
@@ -989,7 +1166,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/airedale-terrier/",
       "year": 1864,
-      "years_before_present": 162
+      "years_before_present": 162,
+      "favorite": false
     },
     {
       "key": "staffordshire-bull-terrier",
@@ -1004,7 +1182,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/076g03-en.pdf",
       "year": 1865,
-      "years_before_present": 161
+      "years_before_present": 161,
+      "favorite": false
     },
     {
       "key": "golden-retriever",
@@ -1019,7 +1198,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/111g08-en.pdf",
       "year": 1868,
-      "years_before_present": 158
+      "years_before_present": 158,
+      "favorite": false
     },
     {
       "key": "boston-terrier",
@@ -1034,7 +1214,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/140g09-en.pdf",
       "year": 1870,
-      "years_before_present": 156
+      "years_before_present": 156,
+      "favorite": false
     },
     {
       "key": "doberman-pinscher",
@@ -1049,7 +1230,24 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/143g02-en.pdf",
       "year": 1875,
-      "years_before_present": 151
+      "years_before_present": 151,
+      "favorite": true
+    },
+    {
+      "key": "australian-kelpie",
+      "name": "Australian Kelpie",
+      "origin_country": "Australia",
+      "estimate_type": "year_range",
+      "estimate_value_raw": "1870-1880",
+      "estimate_note": "ANKC Extended Breed Standard (FCI PRE N\u00b0293): \"In the early 1870's Mr. Robertson of Yeraldra Station (near Forbes in NSW) imported a dog and bitch, Brutus and Jennie from Scotland.\" \"King's Kelpie was entered in the first Sheepdog Trial in 1872, which was held in Forbes, New South Wales. She won this Trial with ease. After this trail win her pups were in great demand and at the time were called Kelpie's pups, and so the name evolved.\" Breed originated from Scottish Rutherford/North Country collies crossed in Australia in the early 1870s.",
+      "recognition_year": "1994",
+      "confidence_tier": "anchor",
+      "notes": "The AKC FSS PDF (listed as primary source in dog_breed_sources.csv) has an empty History section \u2014 no content. FCI PRE standard (N\u00b0293, ANKC Extended Breed Standard, 1994) contains the full documented history and was used instead. The breed is a modern creation (1870s Australia) from imported Scottish working collies. \"Kelpie\" is a Gaelic word meaning \"water sprite,\" taken from the name of the founding bitch, Gleeson's Kelpie.",
+      "primary_source_registry": "FCI/ANKC",
+      "primary_source_url": "https://www.fci.be/Nomenclature/Education/293g01-PRE-en.pdf",
+      "year": 1875,
+      "years_before_present": 151,
+      "favorite": true
     },
     {
       "key": "springer-spaniel",
@@ -1064,7 +1262,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/125g08-en.pdf",
       "year": 1876,
-      "years_before_present": 150
+      "years_before_present": 150,
+      "favorite": false
     },
     {
       "key": "great-dane",
@@ -1079,7 +1278,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/235g02-en.pdf",
       "year": 1878,
-      "years_before_present": 148
+      "years_before_present": 148,
+      "favorite": false
     },
     {
       "key": "english-cocker-spaniel",
@@ -1094,7 +1294,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/005g08-en.pdf",
       "year": 1879,
-      "years_before_present": 147
+      "years_before_present": 147,
+      "favorite": false
     },
     {
       "key": "scottish-terrier",
@@ -1109,7 +1310,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/scottish-terrier/",
       "year": 1879,
-      "years_before_present": 147
+      "years_before_present": 147,
+      "favorite": false
     },
     {
       "key": "samoyed",
@@ -1124,7 +1326,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/212g05-en.pdf",
       "year": 1889,
-      "years_before_present": 137
+      "years_before_present": 137,
+      "favorite": false
     },
     {
       "key": "french-bulldog",
@@ -1139,7 +1342,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/standards/101g09-en.pdf",
       "year": 1889,
-      "years_before_present": 137
+      "years_before_present": 137,
+      "favorite": false
     },
     {
       "key": "miniature-schnauzer",
@@ -1154,7 +1358,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/183g02-en.pdf",
       "year": 1889,
-      "years_before_present": 137
+      "years_before_present": 137,
+      "favorite": false
     },
     {
       "key": "border-collie",
@@ -1169,7 +1374,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/297g01-en.pdf",
       "year": 1893,
-      "years_before_present": 133
+      "years_before_present": 133,
+      "favorite": false
     },
     {
       "key": "boxer",
@@ -1184,7 +1390,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/144g02-en.pdf",
       "year": 1895,
-      "years_before_present": 131
+      "years_before_present": 131,
+      "favorite": false
     },
     {
       "key": "german-shorthaired-pointer",
@@ -1199,7 +1406,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/119g07-en.pdf",
       "year": 1897,
-      "years_before_present": 129
+      "years_before_present": 129,
+      "favorite": false
     },
     {
       "key": "american-pit-bull-terrier",
@@ -1214,7 +1422,8 @@
       "primary_source_registry": "UKC",
       "primary_source_url": "https://www.ukcdogs.com/american-pit-bull-terrier",
       "year": 1898,
-      "years_before_present": 128
+      "years_before_present": 128,
+      "favorite": false
     },
     {
       "key": "german-shepherd-dog",
@@ -1229,7 +1438,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/166g01-en.pdf",
       "year": 1899,
-      "years_before_present": 127
+      "years_before_present": 127,
+      "favorite": false
     },
     {
       "key": "belgian-malinois",
@@ -1244,7 +1454,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/015g01-en.pdf",
       "year": 1900,
-      "years_before_present": 126
+      "years_before_present": 126,
+      "favorite": false
     },
     {
       "key": "belgian-tervuren",
@@ -1259,7 +1470,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/015g01-en.pdf",
       "year": 1900,
-      "years_before_present": 126
+      "years_before_present": 126,
+      "favorite": false
     },
     {
       "key": "belgian-sheepdog",
@@ -1274,7 +1486,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/015g01-en.pdf",
       "year": 1900,
-      "years_before_present": 126
+      "years_before_present": 126,
+      "favorite": false
     },
     {
       "key": "bernese-mountain-dog",
@@ -1289,7 +1502,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/045g02-en.pdf",
       "year": 1905,
-      "years_before_present": 121
+      "years_before_present": 121,
+      "favorite": false
     },
     {
       "key": "afghan-hound",
@@ -1304,7 +1518,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/228g10-en.pdf",
       "year": 1907,
-      "years_before_present": 119
+      "years_before_present": 119,
+      "favorite": false
     },
     {
       "key": "brittany",
@@ -1319,7 +1534,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/095g07-en.pdf",
       "year": 1908,
-      "years_before_present": 118
+      "years_before_present": 118,
+      "favorite": false
     },
     {
       "key": "shetland-sheepdog",
@@ -1334,7 +1550,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/088g01-en.pdf",
       "year": 1909,
-      "years_before_present": 117
+      "years_before_present": 117,
+      "favorite": false
     },
     {
       "key": "rottweiler",
@@ -1349,7 +1566,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/147g02-en.pdf",
       "year": 1910,
-      "years_before_present": 116
+      "years_before_present": 116,
+      "favorite": false
     },
     {
       "key": "rhodesian-ridgeback",
@@ -1364,7 +1582,24 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/rhodesian-ridgeback/",
       "year": 1922,
-      "years_before_present": 104
+      "years_before_present": 104,
+      "favorite": false
+    },
+    {
+      "key": "east-siberian-laika",
+      "name": "East Siberian Laika",
+      "origin_country": "Russia",
+      "estimate_type": "year_range",
+      "estimate_value_raw": "1900-1947",
+      "estimate_note": "FCI-St N\u00b0305: \"The first description of the pre-Amur Laika, which later become the basis of the breed standard, dates from the beginning of the 20th century. In 1947 East-Siberian Laika achieved breed status.\" Evolved from Tungus, Yakut, pre-Baikal and pre-Amur Laikas.",
+      "recognition_year": "1947",
+      "confidence_tier": "anchor",
+      "notes": "Breed status achieved 1947; provisional standard 1949; final standard 1981. The breed evolved from regional Siberian Laika types; not a landrace but a 20th-century consolidation of existing regional types.",
+      "primary_source_registry": "FCI",
+      "primary_source_url": "https://www.fci.be/nomenclature/Standards/305g05-en.pdf",
+      "year": 1923,
+      "years_before_present": 103,
+      "favorite": true
     },
     {
       "key": "shiba-inu",
@@ -1379,7 +1614,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/257g05-en.pdf",
       "year": 1934,
-      "years_before_present": 92
+      "years_before_present": 92,
+      "favorite": false
     },
     {
       "key": "cavalier-king-charles-spaniel",
@@ -1394,7 +1630,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/136g09-en.pdf",
       "year": 1935,
-      "years_before_present": 91
+      "years_before_present": 91,
+      "favorite": false
     },
     {
       "key": "american-staffordshire-terrier",
@@ -1409,7 +1646,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/286g03-en.pdf",
       "year": 1936,
-      "years_before_present": 90
+      "years_before_present": 90,
+      "favorite": false
     },
     {
       "key": "american-cocker-spaniel",
@@ -1424,7 +1662,8 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/167g08-en.pdf",
       "year": 1946,
-      "years_before_present": 80
+      "years_before_present": 80,
+      "favorite": false
     },
     {
       "key": "dogo-argentino",
@@ -1439,7 +1678,8 @@
       "primary_source_registry": "AKC",
       "primary_source_url": "https://www.akc.org/dog-breeds/dogo-argentino/",
       "year": 1947,
-      "years_before_present": 79
+      "years_before_present": 79,
+      "favorite": false
     },
     {
       "key": "cane-corso",
@@ -1454,26 +1694,53 @@
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/medias/343g02-en-20160101-2151.pdf",
       "year": 1980,
-      "years_before_present": 46
+      "years_before_present": 46,
+      "favorite": false
+    },
+    {
+      "key": "silken-windhound",
+      "name": "Silken Windhound",
+      "origin_country": "United States",
+      "estimate_type": "exact_year",
+      "estimate_value_raw": "1985",
+      "estimate_note": "UKC breed standard + ISWS (https://silkenwindhounds.org/history-of-the-breed/): \"Silken Windhounds arrived as a breed with the 'D' litter whelped in 1985.\" Founded by Francie Stull (Kristull Kennel) using Borzoi, Whippet-based lurchers, and Whippets. Breed name officially adopted 1998; ISWS chartered 1999; UKC recognition March 18, 2011.",
+      "recognition_year": "2011",
+      "confidence_tier": "rich",
+      "notes": "Very recent breed with fully documented history. Founded by Francie Stull at Kristull Kennel. Key dates: first litter 1985, name adopted 1998, ISWS chartered 1999, UKC recognition 2011. Foundation crosses were Borzoi (structural base and coat) + small Whippet-based lurchers + Whippets (size and coursing). The breed fills a gap between small and large sighthounds (18-24 inches at shoulder, silky coat).",
+      "primary_source_registry": "UKC",
+      "primary_source_url": "https://www.ukcdogs.com/docs/breeds/silken-windhound.pdf",
+      "year": 1985,
+      "years_before_present": 41,
+      "favorite": true
     }
   ],
   "undated": [
     {
       "key": "anatolian-shepherd-dog",
       "name": "Anatolian Shepherd Dog (\u00c7oban K\u00f6pe\u011fi)",
-      "confidence_tier": "vague"
+      "confidence_tier": "vague",
+      "favorite": false
     },
     {
       "key": "greyhound",
       "name": "Greyhound",
-      "confidence_tier": "vague"
+      "confidence_tier": "vague",
+      "favorite": false
     },
     {
       "key": "cairn-terrier",
       "name": "Cairn Terrier",
-      "confidence_tier": "vague"
+      "confidence_tier": "vague",
+      "favorite": false
+    },
+    {
+      "key": "taiwan-dog",
+      "name": "Taiwan Dog",
+      "confidence_tier": "vague",
+      "favorite": true
     }
   ],
-  "total_researched": 146,
-  "popularity_filter": 100
+  "total_researched": 156,
+  "popularity_filter": 100,
+  "favorites_included_beyond_filter": 11
 }
