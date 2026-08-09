@@ -165,9 +165,13 @@
   });
 
   // ---- header ----
-  document.getElementById("header-sub").textContent =
-    breeds.length + " breeds plotted, " + undated.length + " undated " +
-    "(" + (breeds.length + undated.length) + " of ~628 in the full breed dataset researched so far).";
+  var totalResearched = DATA.total_researched || (breeds.length + undated.length);
+  var popularityFilter = DATA.popularity_filter;
+  document.getElementById("header-sub").textContent = popularityFilter
+    ? breeds.length + " of the top " + popularityFilter + " most popular breeds plotted, " +
+      undated.length + " undated (" + totalResearched + " researched overall, of ~628 in the full breed dataset)."
+    : breeds.length + " breeds plotted, " + undated.length + " undated " +
+      "(" + totalResearched + " of ~628 in the full breed dataset researched so far).";
 
   // ---- utils ----
   function truncate(s, n) { s = s || ""; return s.length > n ? s.slice(0, n - 1) + "…" : s; }
