@@ -1,0 +1,38 @@
+<title>Dog Breed Timeline</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/css/style.css">
+
+<header>
+  <h1>Dog Breed Timeline</h1>
+  <div class="sub" id="header-sub">Loading…</div>
+</header>
+
+<div class="controls">
+  <input id="search" type="text" placeholder="Find a breed…">
+  <div class="legend">
+    <span><span class="dot" style="background:var(--rich)"></span>rich (multiple dated sources)</span>
+    <span><span class="dot" style="background:var(--anchor)"></span>anchor (1–2 dates)</span>
+    <span><span class="dot" style="background:var(--vague)"></span>vague</span>
+  </div>
+  <div class="scale-note">Log scale — recent centuries are stretched, deep history is compressed</div>
+</div>
+
+<div id="timeline-wrap">
+  <svg id="chart" xmlns="http://www.w3.org/2000/svg"></svg>
+</div>
+
+<div id="undated">
+  <h3>Not yet plottable</h3>
+  <div class="sub" id="undated-sub"></div>
+  <div class="chip-list" id="undated-list"></div>
+</div>
+
+<div id="tooltip"></div>
+<div id="detail">
+  <button class="close" id="detail-close">&times;</button>
+  <div id="detail-body"></div>
+</div>
+
+<script src="data/data.js"></script>
+<script src="static/js/timeline.js"></script>
