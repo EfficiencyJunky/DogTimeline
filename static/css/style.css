@@ -20,6 +20,7 @@ header {
   border-bottom: 1px solid var(--line);
 }
 h1 { font-size: 20px; margin: 0 0 4px; font-weight: 600; }
+.tagline { color: var(--text); font-size: 14px; margin: 0 0 6px; }
 .sub { color: var(--muted); font-size: 13px; }
 .controls {
   display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
