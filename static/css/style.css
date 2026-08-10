@@ -10,6 +10,7 @@
   --accent: #f2b544;
   --favorite: #ffd54a;
   --ancestor: #c77dff;
+  --village: #f2b544;
 }
 * { box-sizing: border-box; }
 html, body {
@@ -42,8 +43,13 @@ input#search:focus { outline: 1px solid var(--accent); }
 .mode-toggle button:hover:not(.active) { color: var(--text); }
 .legend { display: flex; gap: 14px; font-size: 12px; color: var(--muted); align-items: center; }
 .legend-ancestor { display: none; }
+.legend-village { display: none; }
 .legend .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: middle; }
 .legend .star { margin-right: 4px; vertical-align: middle; font-size: 13px; }
+.legend .bar-swatch {
+  display: inline-block; width: 16px; height: 4px; border-radius: 2px; margin-right: 5px; vertical-align: middle;
+  background: var(--village); opacity: 0.4;
+}
 .scale-note { font-size: 12px; color: var(--muted); margin-left: auto; }
 #timeline-wrap {
   overflow-x: auto; overflow-y: hidden;
@@ -65,9 +71,16 @@ svg { display: block; }
 .marker.hot { stroke: var(--accent); stroke-width: 3; }
 .marker.favorite { stroke: var(--favorite); stroke-width: 2; }
 .marker.favorite.hot { stroke: var(--accent); stroke-width: 3; }
+.fallback-ring { fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 2.5 2; opacity: 0.6; pointer-events: none; }
+.marker.dim + .fallback-ring { opacity: 0.05; }
 .trunk { stroke-width: 2; }
 .branch { stroke: var(--ancestor); stroke-width: 1.2; opacity: 0.55; }
 .ancestor-label { fill: var(--ancestor); font-weight: 600; }
+.village-bar { stroke: var(--village); stroke-width: 6; stroke-linecap: round; cursor: pointer; }
+.village-bar-end { fill: var(--village); opacity: 0.35; stroke: var(--village); stroke-width: 1.5; }
+.marker.village-node { fill: var(--village); stroke: #b5810e; }
+.village-branch { stroke: var(--village); stroke-width: 1.2; opacity: 0.55; }
+.village-label { fill: var(--village); font-weight: 600; }
 .marker-label {
   fill: var(--text); font-size: 10.5px; pointer-events: none;
 }

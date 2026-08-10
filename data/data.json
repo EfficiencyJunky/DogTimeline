@@ -2,6 +2,38 @@
   "generated_current_year": 2026,
   "breeds": [
     {
+      "key": "xoloitzcuintli",
+      "name": "Xoloitzcuintli",
+      "also_known_as": "Xoloitzcuintle (FCI's own spelling in FCI-St N\u00b0234, this row's actual cited primary-source standard); Mexican Hairless (AKC alias, still a separate unresolved worklist duplicate under key=mexican-hairless, same AKC source PDF)",
+      "origin_country": "Mexico",
+      "estimate_type": "years_ago",
+      "estimate_value_raw": "~14,600 years ago",
+      "origin_estimate_basis": "direct",
+      "estimate_note": "Ni Leathlobhair et al. 2018 sequenced 71 mitochondrial + 7 nuclear genomes from ancient North American and Siberian dogs spanning ~9,000 years. All sampled precontact American dogs (PCDs) formed a monophyletic lineage descended from Siberian dogs introduced via early human migration(s) ~17,500-13,000 years ago, sharing a common ancestor ~14,600 years ago (95% HPD 16,484-12,965 ya) -- diverged from an ancestor shared with the Zhokhov Island dogs (see zhokhov-siberian-sled-dog) ~1,000 years earlier. Critically, this lineage was NOT domesticated locally from North American wolves. Corroborated by Perri et al. 2021 (PNAS), which independently found dogs accompanied the first people into the Americas as human dispersal began ~15,000 years ago -- consistent with this ~14,600-year figure via a different dataset/method.",
+      "breed_note": "\"Their origin dates far back in history\" \u2014 eaten as a delicacy in pre-Hispanic Mexico in ceremonies, regarded as representative of the god Xolotl. No numeric date for that era.",
+      "recognition_year": "1940",
+      "confidence_tier": "vague",
+      "notes": "Added mrca_lineage_id 2026-08-09: Bergstrom et al. 2020 (Science) found ~3% pre-Columbian American dog ancestry survives in modern Xoloitzcuintle, tracing to the precontact American dog lineage dated by Ni Leathlobhair et al. 2018 (see mrca_lineage_id: precontact-american-dog) -- a minority-ancestry component, not proof the modern breed descends primarily from it. This breed still has no tier-2 (landrace) date of its own; confidence_tier corrected from anchor to vague to reflect that (was previously inconsistent with an empty origin_estimate_value -- confidence_tier describes tier-2 evidence quality specifically, per breed_origins_schema.md).",
+      "primary_source_registry": "FCI",
+      "primary_source_url": "https://www.fci.be/Nomenclature/Standards/234g05-en.pdf",
+      "year": -12574,
+      "years_before_present": 14600,
+      "favorite": false,
+      "mrca": {
+        "lineage_id": "precontact-american-dog",
+        "name": "Pre-contact American dog lineage",
+        "estimate_type": "years_ago",
+        "estimate_value_raw": "~14,600 years ago",
+        "estimate_note": "Ni Leathlobhair et al. 2018 sequenced 71 mitochondrial + 7 nuclear genomes from ancient North American and Siberian dogs spanning ~9,000 years. All sampled precontact American dogs (PCDs) formed a monophyletic lineage descended from Siberian dogs introduced via early human migration(s) ~17,500-13,000 years ago, sharing a common ancestor ~14,600 years ago (95% HPD 16,484-12,965 ya) -- diverged from an ancestor shared with the Zhokhov Island dogs (see zhokhov-siberian-sled-dog) ~1,000 years earlier. Critically, this lineage was NOT domesticated locally from North American wolves. Corroborated by Perri et al. 2021 (PNAS), which independently found dogs accompanied the first people into the Americas as human dispersal began ~15,000 years ago -- consistent with this ~14,600-year figure via a different dataset/method.",
+        "years_before_present": 14600,
+        "source_citation": "N\u00ed Leathlobhair et al. 2018, \"The evolutionary history of dogs in the Americas,\" Science 361(6397):81-85",
+        "source_url": "https://doi.org/10.1126/science.aao4776"
+      },
+      "village": null,
+      "date_source": "mrca",
+      "fallback_source_name": "Pre-contact American dog lineage"
+    },
+    {
       "key": "taiwan-dog",
       "name": "Taiwan Dog",
       "also_known_as": "Formosan Mountain Dog",
@@ -9,16 +41,72 @@
       "estimate_type": "years_ago",
       "estimate_value_raw": "~9900 years ago",
       "origin_estimate_basis": "direct",
-      "estimate_note": "FCI-St N\u00b0348 (2015): \"originally native Taiwanese dogs, descendants of the South Asian hunting dogs which ancient local inhabitants used to live with.\" 1980 cooperative study (NTU/Gifu/Nagoya universities) confirmed South Asian hunting dog descent, no specific date. SECONDARY GENETIC SOURCE: Zhang et al. 2020, \"Genomic regions under selection in the feralization of the dingoes,\" Nature Communications \u2014 whole-genome analysis including a real Taiwan village dog sample places it within the basal southern East Asian dog clade (the same clade that produced dingoes and New Guinea Singing Dogs), with clade divergence from Indonesian village dogs dated to ~9,900 years ago (dingo arrival in Australia ~8,300 years ago). Consistent with the broader <16,300-year regional dog-origin estimate south of the Yangtze River (Pang et al. 2009, Molecular Biology and Evolution).",
+      "estimate_note": "Zhang et al. 2020 whole-genome analysis integrated a real Taiwan village dog sample with 97 published canid genomes; found it groups within a basal southern-East-Asia/Island-Southeast-Asia clade (the same clade that produced dingoes and New Guinea Singing Dogs), with clade divergence from Indonesian village dogs dated to ~9,900 years ago. Consistent with the broader <16,300-year regional dog-origin estimate south of the Yangtze River (Pang et al. 2009).",
+      "breed_note": "FCI-St N\u00b0348 (2015): \"originally native Taiwanese dogs, descendants of the South Asian hunting dogs which ancient local inhabitants used to live with.\" 1980 cooperative study (NTU/Gifu/Nagoya universities) confirmed South Asian hunting dog descent, no specific date.",
       "recognition_year": "",
-      "confidence_tier": "anchor",
-      "notes": "Upgraded from vague to anchor (2026-08-09, targeted genetics search per PROCESS.md step 6). This dates the basal southern East Asian/Southeast Asian dog CLADE that Taiwan's native dog population belongs to (confirmed via a real Taiwan sample in the genomic analysis), not a confirmed divergence time for the modern standardized Taiwan Dog/Formosan Mountain Dog breed specifically \u2014 same epistemic category as Akita's Jomon-era haplotype evidence (regional lineage confirmed old, breed standardization is separate and recent). Aggregator web claims of \"10,000-20,000 years\" are consistent in order of magnitude with this finding but are themselves unsourced; the ~9,900-year figure used here is the actual peer-reviewed number. See data/supplemental/taiwan-dog.txt for full research.",
+      "confidence_tier": "vague",
+      "notes": "Downgraded from anchor to vague and origin_estimate cleared 2026-08-09: the ~9,900-year figure was a village-dog-population divergence date (Zhang et al. 2020, Taiwan/Indonesian basal clade), not a founding date for the modern standardized breed specifically -- conflating the two is the same ambiguity ancestor_lineages.csv was built to resolve, one tier over (population-level vs. breed-level, not MRCA-vs-breed, but the same principle). See village_dog_population_id for the (well-evidenced) population claim, which is unaffected by this change. Genuinely no separate landrace-tier date is known for the modern breed itself. Aggregator web claims of \"10,000-20,000 years\" remain unsourced regardless. See data/supplemental/taiwan-dog.txt for full research.",
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/348g05-en.pdf",
       "year": -7874,
       "years_before_present": 9900,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": {
+        "population_id": "taiwan-indonesian-village-dog-clade",
+        "name": "Taiwan / Indonesian village dog basal clade",
+        "region": "Taiwan; Indonesia (Island Southeast Asia)",
+        "diverged_from": "broader southern East Asian dog lineage",
+        "estimate_type": "years_ago",
+        "estimate_value_raw": "~9900 years ago",
+        "estimate_note": "Zhang et al. 2020 whole-genome analysis integrated a real Taiwan village dog sample with 97 published canid genomes; found it groups within a basal southern-East-Asia/Island-Southeast-Asia clade (the same clade that produced dingoes and New Guinea Singing Dogs), with clade divergence from Indonesian village dogs dated to ~9,900 years ago. Consistent with the broader <16,300-year regional dog-origin estimate south of the Yangtze River (Pang et al. 2009).",
+        "confidence_tier": "anchor",
+        "still_extant": true,
+        "years_before_present": 9900,
+        "related_breeds": [
+          {
+            "key": "taiwan-dog",
+            "name": "Taiwan Dog"
+          }
+        ],
+        "notes": "Pilot row for this schema (see village_dog_populations_schema.md). This date currently also lives in breed_origins.csv's taiwan-dog row (origin_estimate_value: ~9900 years ago) as a proxy for that breed's landrace date -- the same tier-conflation ancestor_lineages.csv was built to resolve, one tier over. Migrating taiwan-dog to reference this row via village_dog_population_id (with its own origin_estimate_type reset to none) is the natural first real usage of this file. Only clean village-dog pilot case as of 2026-08-09 -- Dingo/NGSD are feral/wild, a different category (see schema doc); Central Asian and African village dog populations are genetically established but have no dated divergence estimate in the literature found so far.",
+        "source_citation": "Zhang et al. 2020, \"Genomic regions under selection in the feralization of the dingoes,\" Nature Communications",
+        "source_url": "https://www.nature.com/articles/s41467-020-14515-6"
+      },
+      "date_source": "village",
+      "fallback_source_name": "Taiwan / Indonesian village dog basal clade"
+    },
+    {
+      "key": "siberian-husky",
+      "name": "Siberian Husky",
+      "also_known_as": "",
+      "origin_country": "U.S.A.",
+      "estimate_type": "years_ago",
+      "estimate_value_raw": "~9500 years ago",
+      "origin_estimate_basis": "direct",
+      "estimate_note": "Sinding et al. 2020 sequenced a ~9,500-year-old dog genome from Zhokhov Island, northeastern Siberia (associated with early sled-dog technology) alongside 10 modern Greenland sled dogs; found Siberian Husky, Alaskan Malamute, and Greenland sled dog all share the major part of their genome with this ancient dog. Greenland sled dog shows the least admixture with other dog populations since this split -- the basis of its 'oldest/most original breed' reputation (Guinness World Records, 2020) -- a claim about genetic purity, not an earlier founding date than Husky or Malamute, which trace to the identical ancestor.",
+      "breed_note": "",
+      "recognition_year": "1930",
+      "confidence_tier": "vague",
+      "notes": "Downgraded from anchor to vague and origin_estimate cleared 2026-08-09: the 9,500-year figure was an MRCA/ancestor-lineage date (Sinding et al. 2020, Zhokhov Island dog), not a Chukchi-specific founding date -- conflating the two is exactly the ambiguity ancestor_lineages.csv exists to resolve. See mrca_lineage_id for the (very well-evidenced) ancestor claim, which is unaffected by this change. Genuinely no separate landrace-tier date is known for this breed specifically.",
+      "primary_source_registry": "FCI",
+      "primary_source_url": "https://www.fci.be/Nomenclature/Standards/270g05-en.pdf",
+      "year": -7474,
+      "years_before_present": 9500,
+      "favorite": false,
+      "mrca": {
+        "lineage_id": "zhokhov-siberian-sled-dog",
+        "name": "Zhokhov Island Siberian sled dog",
+        "estimate_type": "years_ago",
+        "estimate_value_raw": "~9500 years ago",
+        "estimate_note": "Sinding et al. 2020 sequenced a ~9,500-year-old dog genome from Zhokhov Island, northeastern Siberia (associated with early sled-dog technology) alongside 10 modern Greenland sled dogs; found Siberian Husky, Alaskan Malamute, and Greenland sled dog all share the major part of their genome with this ancient dog. Greenland sled dog shows the least admixture with other dog populations since this split -- the basis of its 'oldest/most original breed' reputation (Guinness World Records, 2020) -- a claim about genetic purity, not an earlier founding date than Husky or Malamute, which trace to the identical ancestor.",
+        "years_before_present": 9500,
+        "source_citation": "Sinding et al. 2020, \"Arctic-adapted dogs emerged at the Pleistocene-Holocene transition,\" Science 368(6498):1495-1499",
+        "source_url": "https://www.science.org/doi/10.1126/science.aaz8599"
+      },
+      "village": null,
+      "date_source": "mrca",
+      "fallback_source_name": "Zhokhov Island Siberian sled dog"
     },
     {
       "key": "chow-chow",
@@ -37,7 +125,41 @@
       "year": -6274,
       "years_before_present": 8300,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
+    },
+    {
+      "key": "akita",
+      "name": "Akita",
+      "also_known_as": "",
+      "origin_country": "Japan",
+      "estimate_type": "years_ago",
+      "estimate_value_raw": "~7,300-7,400 years ago",
+      "origin_estimate_basis": "direct",
+      "estimate_note": "Gakuhari et al. 2015 directly AMS-radiocarbon-dated two dog burials excavated at the Kamikuroiwa rock shelter site (Shikoku, Japan), buried alongside a human individual -- calibrated age 7414-7273 calBP, the oldest confirmed dog burials in Japan. Masuda & Sato 2015 (companion mtDNA study of the same specimens) found one of the two dogs carried the M1 haplotype, also found in one ancient Okhotsk-period dog and eight animals across three modern Japanese indigenous breeds -- Shiba Inu, Akita, and Kishu -- plus four non-Japanese-breed animals.",
+      "breed_note": "",
+      "recognition_year": "1931",
+      "confidence_tier": "vague",
+      "notes": "Downgraded from anchor to vague and origin_estimate cleared 2026-08-09: the previously-used \"~5000 years ago\" figure was an imprecise, uncited web-search paraphrase of the Kamikuroiwa Rock Shelter finding (see raw_extracts/akita.txt), not a breed-specific landrace date -- moved to mrca_lineage_id where it belongs, now with the actual peer-reviewed citations and the correct radiocarbon figure (~7,300-7,400 years ago, not ~5,000). Same tier-conflation pattern as Siberian Husky/Taiwan Dog. AKC's own page has no historical section beyond \"ancient,\" so origin_estimate_note is left empty rather than filled with meta-commentary -- see mrca_lineage_id (kamikuroiwa-jomon-dog) for the real citations and finding. Genuinely no separate landrace-tier date is known for the modern standardized breed (formalized as a preservation effort in the early-to-mid 20th century).",
+      "primary_source_registry": "AKC",
+      "primary_source_url": "https://www.akc.org/dog-breeds/akita/",
+      "year": -5374,
+      "years_before_present": 7400,
+      "favorite": false,
+      "mrca": {
+        "lineage_id": "kamikuroiwa-jomon-dog",
+        "name": "Kamikuroiwa Rock Shelter Jomon dog (M1 haplotype)",
+        "estimate_type": "years_ago",
+        "estimate_value_raw": "~7,300-7,400 years ago",
+        "estimate_note": "Gakuhari et al. 2015 directly AMS-radiocarbon-dated two dog burials excavated at the Kamikuroiwa rock shelter site (Shikoku, Japan), buried alongside a human individual -- calibrated age 7414-7273 calBP, the oldest confirmed dog burials in Japan. Masuda & Sato 2015 (companion mtDNA study of the same specimens) found one of the two dogs carried the M1 haplotype, also found in one ancient Okhotsk-period dog and eight animals across three modern Japanese indigenous breeds -- Shiba Inu, Akita, and Kishu -- plus four non-Japanese-breed animals.",
+        "years_before_present": 7400,
+        "source_citation": "Gakuhari et al. 2015, \"Radiocarbon dating of one human and two dog burials from the Kamikuroiwa rock shelter site, Ehime Prefecture,\" Anthropological Science 123(2):87-94",
+        "source_url": "https://doi.org/10.1537/ase.150309"
+      },
+      "village": null,
+      "date_source": "mrca",
+      "fallback_source_name": "Kamikuroiwa Rock Shelter Jomon dog (M1 haplotype)"
     },
     {
       "key": "norwegian-elkhound",
@@ -47,16 +169,18 @@
       "estimate_type": "era_bce_ce",
       "estimate_value_raw": "~5000-4000 BCE (ancestral type)",
       "origin_estimate_basis": "direct",
-      "estimate_note": "Primary FCI-St N\u00b0242 (1999) has NO historical section. SECONDARY SOURCE: excavations at Viste Cave, J\u00e6ren, western Norway, uncovered canine skeletons dated ~5,000-4,000 BCE with a sturdy build resembling the modern Norwegian Elkhound; identified by Dr. Brinchmann (Bergen Museum) as Elkhound-type.",
+      "estimate_note": "Primary FCI-St N\u00b0242 (1999) has NO historical section -- confirmed by reading the full standard text (2026-08-09), it is pure conformation/appearance description. The \"~5000-4000 BCE, Viste Cave dog skeletons identified as Elkhound-type by Professor Brinchmann of Bergen Museum\" claim traces only to dog-breed enthusiast sites (Showsight Magazine, National Purebred Dog Day, Sons of Norway, NEAA), all repeating the same unattributed identification with no accessible original publication, journal, or DOI -- unlike Akita's equivalent claim (see mrca_lineage_id: kamikuroiwa-jomon-dog), this could not be traced to a real citable source despite a genuine search attempt (2026-08-09): the Wikipedia \"Alex Brinchmann\" is a pediatrician/novelist, not the zoologist being referenced; the one real academic reference found for the Viste site, M. Degerbol's 1951 Stavanger Museum faunal study, could not be confirmed as the actual source of the Elkhound identification. Treat as unverified breed lore, not a citable archaeological/genetic finding -- see PROCESS.md Open threads for the follow-up (needs Norwegian-language archive access).",
       "recognition_year": "1877",
-      "confidence_tier": "anchor",
-      "notes": "Same caveat as Akita: mainstream/scholarly opinion is these Viste Cave dogs were likely a general Spitz-type ancestor of the modern breed, not proof the specific standardized Norwegian Elkhound breed itself is 6,000+ years old. Good for \"this type of dog has been in this region since the Mesolithic,\" not for \"this exact breed is that old.\"",
+      "confidence_tier": "vague",
+      "notes": "Downgraded from anchor to vague 2026-08-09 after a citation-verification pass (same check that resolved Akita/Middle Asian Ovtcharka) found no real source behind the Viste Cave claim -- see origin_estimate_note. origin_estimate_value left as-is (not cleared/migrated to mrca_lineage_id) since there's no verifiable source to cite in ancestor_lineages.csv; this is a genuine tier-1/tier-2 conflation the same way Akita's was, just blocked on sourcing rather than resolved. Not logged to needs_verification.csv -- that queue is for lower-reasoning-model deferrals per PROCESS.md; this verification was already attempted directly by a higher-reasoning session and reached a dead end, which is a different (and more final, pending better source access) state than 'not yet checked.'",
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/Nomenclature/Standards/242g05-en.pdf",
       "year": -4000,
       "years_before_present": 6026,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "ibizan-hound",
@@ -75,26 +199,50 @@
       "year": -3400,
       "years_before_present": 5426,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
-      "key": "akita",
-      "name": "Akita",
+      "key": "saluki",
+      "name": "Saluki",
       "also_known_as": "",
-      "origin_country": "Japan",
-      "estimate_type": "years_ago",
-      "estimate_value_raw": "~5000 years ago",
+      "origin_country": "Middle East",
+      "estimate_type": "era_bce_ce",
+      "estimate_value_raw": "~3300 BCE",
       "origin_estimate_basis": "direct",
-      "estimate_note": "SECONDARY SOURCE (AKC page itself has nothing but \"ancient\"): two dog burials radiocarbon-dated to the late Initial/early Early Jomon period (~5,000+ years ago) were excavated at the Kamikuroiwa Rock Shelter, Ehime Prefecture \u2014 the oldest dog burials found in Japan. mtDNA analysis found a haplotype (M1) shared with modern Akita, Shiba, and Kishu.",
-      "recognition_year": "1931",
+      "estimate_note": "SECONDARY SOURCE (AKC page itself has nothing but \"ancient\"): a golden dog pendant at the Museum of Fine Arts, Boston, excavated at the Sumerian city of Uruk, depicts a curly-tailed, tall-eared dog consistent with Saluki type, dated ~3300 BCE (early Bronze Age Mesopotamia).",
+      "recognition_year": "1927",
       "confidence_tier": "anchor",
-      "notes": "Genetic continuity is at the *regional haplotype* level (shared with Shiba and Kishu too, not exclusive to Akita), not proof that the modern standardized Akita breed itself is 5,000 years old \u2014 the breed as bred today was formalized in the early-to-mid 20th century. Treat as \"dogs have been in this specific region for ~5,000 years and modern Japanese spitz breeds carry some of that lineage,\" not \"the Akita breed is 5,000 years old.\"",
+      "notes": "This is one archaeological artifact showing a Saluki-*type* dog existed, not proof of an unbroken breed lineage to today's AKC Saluki \u2014 treat as \"earliest depiction of the type,\" same epistemic category as the Ibizan/Pharaoh Hound tomb-art claims below, which turned out to be misleading. Worth noting as a caveat rather than treating as settled. Linked to village_dog_population_id: middle-eastern-village-dog-clade 2026-08-09 (Brown et al. 2011 Y-chromosome study -- desert-bred Salukis cluster entirely within the Middle Eastern village dog clade, ~6,820 BP). Additional deeper-tier fact, not a replacement for this row's own tier-2 date -- same pattern as Chihuahua/precontact-american-dog.",
       "primary_source_registry": "AKC",
-      "primary_source_url": "https://www.akc.org/dog-breeds/akita/",
-      "year": -2974,
-      "years_before_present": 5000,
+      "primary_source_url": "https://www.akc.org/dog-breeds/saluki/",
+      "year": -3300,
+      "years_before_present": 5326,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": {
+        "population_id": "middle-eastern-village-dog-clade",
+        "name": "Middle Eastern village dog clade",
+        "region": "Middle East (Egypt, Lebanon, Qatar, Turkey, Afghanistan sampled)",
+        "diverged_from": "reciprocally monophyletic sister clade to the Southeast Asian village dog Y-chromosome lineage",
+        "estimate_type": "years_ago",
+        "estimate_value_raw": "~6820 years ago",
+        "estimate_note": "Brown et al. 2011 Y-chromosome (paternal lineage) analysis found Middle Eastern village dogs form a reciprocally monophyletic clade distinct from the Southeast Asian village dog clade, estimated age 6,820 BP (95% CI 3,931-9,709 BP). Desert-bred Salukis clustered entirely within this clade, sharing six haplotypes with regional village dogs.",
+        "confidence_tier": "anchor",
+        "still_extant": true,
+        "years_before_present": 6820,
+        "related_breeds": [
+          {
+            "key": "saluki",
+            "name": "Saluki"
+          }
+        ],
+        "notes": "Second real dated village-dog population found (2026-08-09), after the Taiwan/Indonesian pilot -- schema was deliberately not generalized further until a second real case showed up (see village_dog_populations_schema.md). Y-chromosome-only (paternal lineage), wide confidence interval (3,931-9,709 BP) -- weaker/narrower evidence than Zhang et al. 2020's whole-genome dating for the Taiwan/Indonesian clade, hence anchor not rich. Does not establish when the modern standardized Saluki breed itself was founded, only that it clusters within this dated regional clade -- Saluki's own tier-2 date (FCI/AKC's ~3300 BCE Sumerian-pendant claim) is separate, unaffected, and itself flagged in that row's notes as an unverified resemblance-based claim (same epistemic category as the debunked Pharaoh Hound/Ibizan Hound tomb-art dates) -- this clade date doesn't confirm or contradict that specific number, just establishes a deeper, genetically-real clade Saluki belongs to.",
+        "source_citation": "Brown et al. 2011, \"Phylogenetic distinctiveness of Middle Eastern and Southeast Asian village dog Y chromosomes illuminates dog origins,\" PLoS ONE 6(12):e28496",
+        "source_url": "https://doi.org/10.1371/journal.pone.0028496"
+      },
+      "date_source": "landrace"
     },
     {
       "key": "basenji",
@@ -113,7 +261,9 @@
       "year": -2700,
       "years_before_present": 4726,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "middle-asian-ovtcharka",
@@ -132,7 +282,9 @@
       "year": -2000,
       "years_before_present": 4026,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "central-asian-shepherd-dog",
@@ -151,7 +303,9 @@
       "year": -1974,
       "years_before_present": 4000,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "dingo",
@@ -170,7 +324,9 @@
       "year": -1474,
       "years_before_present": 3500,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "new-guinea-singing-dog",
@@ -189,7 +345,9 @@
       "year": -1474,
       "years_before_present": 3500,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "maltese",
@@ -208,7 +366,9 @@
       "year": -350,
       "years_before_present": 2376,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "alaskan-malamute",
@@ -236,7 +396,9 @@
         "years_before_present": 9500,
         "source_citation": "Sinding et al. 2020, \"Arctic-adapted dogs emerged at the Pleistocene-Holocene transition,\" Science 368(6498):1495-1499",
         "source_url": "https://www.science.org/doi/10.1126/science.aaz8599"
-      }
+      },
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "chinese-shar-pei",
@@ -255,7 +417,9 @@
       "year": -200,
       "years_before_present": 2226,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "jindo",
@@ -274,7 +438,9 @@
       "year": 0,
       "years_before_present": 2026,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "neapolitan-mastiff",
@@ -293,7 +459,9 @@
       "year": 50,
       "years_before_present": 1976,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "tibetan-mastiff",
@@ -312,7 +480,9 @@
       "year": 350,
       "years_before_present": 1676,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "irish-wolfhound",
@@ -331,7 +501,9 @@
       "year": 391,
       "years_before_present": 1635,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "italian-greyhound",
@@ -350,7 +522,9 @@
       "year": 450,
       "years_before_present": 1576,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "lhasa-apso",
@@ -369,7 +543,9 @@
       "year": 650,
       "years_before_present": 1376,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "bloodhound",
@@ -388,7 +564,9 @@
       "year": 650,
       "years_before_present": 1376,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "kuvasz",
@@ -407,7 +585,9 @@
       "year": 850,
       "years_before_present": 1176,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "komondor",
@@ -426,7 +606,9 @@
       "year": 900,
       "years_before_present": 1126,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "greenland-dog",
@@ -454,7 +636,9 @@
         "years_before_present": 9500,
         "source_citation": "Sinding et al. 2020, \"Arctic-adapted dogs emerged at the Pleistocene-Holocene transition,\" Science 368(6498):1495-1499",
         "source_url": "https://www.science.org/doi/10.1126/science.aaz8599"
-      }
+      },
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "kangal-dog",
@@ -473,7 +657,9 @@
       "year": 1050,
       "years_before_present": 976,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "corgi",
@@ -492,7 +678,9 @@
       "year": 1107,
       "years_before_present": 919,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "chihuahua",
@@ -505,13 +693,24 @@
       "estimate_note": "FCI: 'at the time of the Toltec civilization, were captured and domesticated by the natives. Representations of a Toy dog called Techichi which lived in Tula were used as decorations on town architecture.' Toltec capital Tula active c.900-1168 CE.",
       "recognition_year": "",
       "confidence_tier": "anchor",
-      "notes": "Pre-Columbian origin genetically confirmed: Perri et al. 2021 (Science) found distinct pre-Columbian dog ancestry in modern Chihuahuas.",
+      "notes": "Pre-Columbian origin genetically confirmed, citation corrected 2026-08-09: the previous \"Perri et al. 2021 (Science)\" citation could not be verified (no such paper found; Perri is a real co-author, but on Ni Leathlobhair et al. 2018, not a 2021 paper) -- replaced with the real sources. Traced the DOI 10.1038/s41586-020-03082-x (the likely source of the confusion, since Perri is a real co-author on it): it's Perri et al. 2021, \"Dire wolves were the last of an ancient New World canid lineage,\" Nature 591:87-91 -- sequenced 5 dire wolf genomes, found dire wolves split from living canids ~5.7 million years ago with no gene flow to grey wolves/coyotes. Confirmed unrelated to Chihuahua/pre-Columbian dog ancestry -- a different species entirely, not just a wrong year/journal. Don't re-verify this specific DOI again if it resurfaces. Turner then found the likely actual intended paper (2026-08-09): Perri et al. 2021, \"Dog domestication and the dual dispersal of people and dogs into the Americas,\" PNAS 118(6):e2010083118 -- real author/year/topic match, just the wrong journal (PNAS not Science) and no Chihuahua-specific percentage in it (that's still Bergstrom et al. 2020's contribution; Perri 2021 gives the ~15,000-year arrival timing, corroborating Ni Leathlobhair 2018's ~14,600-year figure). Added as a third source on the precontact-american-dog lineage. Ni Leathlobhair et al. 2018 (Science) established the precontact American dog lineage (see mrca_lineage_id: precontact-american-dog); Bergstrom et al. 2020 (Science) found ~4% of that ancestry survives in modern Chihuahuas specifically. This is a minority-ancestry component, not the breed's primary lineage -- the FCI's own Toltec-era Techichi date (900-1168 CE) is independent evidence and stays as this row's tier-2 date, unaffected by this addition.",
       "primary_source_registry": "FCI",
       "primary_source_url": "https://www.fci.be/nomenclature/Standards/218g09-en.pdf",
       "year": 1168,
       "years_before_present": 858,
       "favorite": false,
-      "mrca": null
+      "mrca": {
+        "lineage_id": "precontact-american-dog",
+        "name": "Pre-contact American dog lineage",
+        "estimate_type": "years_ago",
+        "estimate_value_raw": "~14,600 years ago",
+        "estimate_note": "Ni Leathlobhair et al. 2018 sequenced 71 mitochondrial + 7 nuclear genomes from ancient North American and Siberian dogs spanning ~9,000 years. All sampled precontact American dogs (PCDs) formed a monophyletic lineage descended from Siberian dogs introduced via early human migration(s) ~17,500-13,000 years ago, sharing a common ancestor ~14,600 years ago (95% HPD 16,484-12,965 ya) -- diverged from an ancestor shared with the Zhokhov Island dogs (see zhokhov-siberian-sled-dog) ~1,000 years earlier. Critically, this lineage was NOT domesticated locally from North American wolves. Corroborated by Perri et al. 2021 (PNAS), which independently found dogs accompanied the first people into the Americas as human dispersal began ~15,000 years ago -- consistent with this ~14,600-year figure via a different dataset/method.",
+        "years_before_present": 14600,
+        "source_citation": "N\u00ed Leathlobhair et al. 2018, \"The evolutionary history of dogs in the Americas,\" Science 361(6397):81-85",
+        "source_url": "https://doi.org/10.1126/science.aao4776"
+      },
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "basset-hound",
@@ -530,7 +729,9 @@
       "year": 1200,
       "years_before_present": 826,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "great-pyrenees",
@@ -549,7 +750,9 @@
       "year": 1350,
       "years_before_present": 676,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "mastiff",
@@ -568,7 +771,9 @@
       "year": 1350,
       "years_before_present": 676,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "english-setter",
@@ -587,7 +792,9 @@
       "year": 1350,
       "years_before_present": 676,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "vizsla",
@@ -606,7 +813,9 @@
       "year": 1350,
       "years_before_present": 676,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "shih-tzu",
@@ -625,7 +834,9 @@
       "year": 1368,
       "years_before_present": 658,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "borzoi",
@@ -644,7 +855,9 @@
       "year": 1450,
       "years_before_present": 576,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "beagle",
@@ -663,7 +876,9 @@
       "year": 1550,
       "years_before_present": 476,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "havanese",
@@ -682,7 +897,9 @@
       "year": 1550,
       "years_before_present": 476,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "bichon-frise",
@@ -701,7 +918,9 @@
       "year": 1550,
       "years_before_present": 476,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "papillon",
@@ -720,7 +939,9 @@
       "year": 1550,
       "years_before_present": 476,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "pug",
@@ -739,7 +960,9 @@
       "year": 1550,
       "years_before_present": 476,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "west-highland-white-terrier",
@@ -758,7 +981,9 @@
       "year": 1596,
       "years_before_present": 430,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "newfoundland",
@@ -777,7 +1002,9 @@
       "year": 1610,
       "years_before_present": 416,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "dalmatian",
@@ -796,7 +1023,9 @@
       "year": 1615,
       "years_before_present": 411,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "bulldog",
@@ -815,7 +1044,9 @@
       "year": 1635,
       "years_before_present": 391,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "poodle-standard",
@@ -834,7 +1065,9 @@
       "year": 1650,
       "years_before_present": 376,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "saint-bernard",
@@ -853,7 +1086,9 @@
       "year": 1650,
       "years_before_present": 376,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "whippet",
@@ -872,7 +1107,9 @@
       "year": 1685,
       "years_before_present": 341,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "pointer",
@@ -891,7 +1128,9 @@
       "year": 1713,
       "years_before_present": 313,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "dachshund",
@@ -910,7 +1149,9 @@
       "year": 1715,
       "years_before_present": 311,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "irish-setter",
@@ -929,7 +1170,9 @@
       "year": 1750,
       "years_before_present": 276,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "soft-coated-wheaten-terrier",
@@ -948,7 +1191,9 @@
       "year": 1750,
       "years_before_present": 276,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "english-foxhound",
@@ -967,7 +1212,9 @@
       "year": 1750,
       "years_before_present": 276,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "pomeranian",
@@ -986,7 +1233,9 @@
       "year": 1764,
       "years_before_present": 262,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "american-foxhound",
@@ -1005,7 +1254,9 @@
       "year": 1785,
       "years_before_present": 241,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "labrador-retriever",
@@ -1024,7 +1275,9 @@
       "year": 1785,
       "years_before_present": 241,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "yakutian-laika",
@@ -1043,7 +1296,9 @@
       "year": 1795,
       "years_before_present": 231,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "pharaoh-hound",
@@ -1062,7 +1317,9 @@
       "year": 1805,
       "years_before_present": 221,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "australian-shepherd",
@@ -1081,7 +1338,9 @@
       "year": 1805,
       "years_before_present": 221,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "scottish-deerhound",
@@ -1100,7 +1359,9 @@
       "year": 1815,
       "years_before_present": 211,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "weimaraner",
@@ -1119,7 +1380,9 @@
       "year": 1815,
       "years_before_present": 211,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "gordon-setter",
@@ -1138,7 +1401,9 @@
       "year": 1815,
       "years_before_present": 211,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "parson-russell-terrier",
@@ -1157,7 +1422,9 @@
       "year": 1819,
       "years_before_present": 207,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "american-bulldog",
@@ -1176,7 +1443,9 @@
       "year": 1835,
       "years_before_present": 191,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "australian-cattle-dog",
@@ -1195,7 +1464,9 @@
       "year": 1845,
       "years_before_present": 181,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "leonberger",
@@ -1214,7 +1485,9 @@
       "year": 1846,
       "years_before_present": 180,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "kerry-blue-terrier",
@@ -1233,7 +1506,9 @@
       "year": 1847,
       "years_before_present": 179,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "rough-collie",
@@ -1252,7 +1527,9 @@
       "year": 1850,
       "years_before_present": 176,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "smooth-collie",
@@ -1271,7 +1548,9 @@
       "year": 1850,
       "years_before_present": 176,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "miniature-pinscher",
@@ -1290,7 +1569,9 @@
       "year": 1850,
       "years_before_present": 176,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "jack-russell-terrier",
@@ -1309,7 +1590,9 @@
       "year": 1850,
       "years_before_present": 176,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "wire-fox-terrier",
@@ -1328,7 +1611,9 @@
       "year": 1850,
       "years_before_present": 176,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "bullmastiff",
@@ -1347,7 +1632,9 @@
       "year": 1850,
       "years_before_present": 176,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "chesapeake-bay-retriever",
@@ -1366,7 +1653,9 @@
       "year": 1850,
       "years_before_present": 176,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "yorkshire-terrier",
@@ -1385,7 +1674,9 @@
       "year": 1855,
       "years_before_present": 171,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "flat-coated-retriever",
@@ -1404,7 +1695,9 @@
       "year": 1860,
       "years_before_present": 166,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "airedale-terrier",
@@ -1423,7 +1716,9 @@
       "year": 1864,
       "years_before_present": 162,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "staffordshire-bull-terrier",
@@ -1442,7 +1737,9 @@
       "year": 1865,
       "years_before_present": 161,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "golden-retriever",
@@ -1461,7 +1758,9 @@
       "year": 1868,
       "years_before_present": 158,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "boston-terrier",
@@ -1480,7 +1779,9 @@
       "year": 1870,
       "years_before_present": 156,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "doberman-pinscher",
@@ -1499,7 +1800,9 @@
       "year": 1875,
       "years_before_present": 151,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "australian-kelpie",
@@ -1518,7 +1821,9 @@
       "year": 1875,
       "years_before_present": 151,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "springer-spaniel",
@@ -1537,7 +1842,9 @@
       "year": 1876,
       "years_before_present": 150,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "great-dane",
@@ -1556,7 +1863,9 @@
       "year": 1878,
       "years_before_present": 148,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "english-cocker-spaniel",
@@ -1575,7 +1884,9 @@
       "year": 1879,
       "years_before_present": 147,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "scottish-terrier",
@@ -1594,7 +1905,9 @@
       "year": 1879,
       "years_before_present": 147,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "samoyed",
@@ -1613,7 +1926,9 @@
       "year": 1889,
       "years_before_present": 137,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "french-bulldog",
@@ -1632,7 +1947,9 @@
       "year": 1889,
       "years_before_present": 137,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "miniature-schnauzer",
@@ -1651,7 +1968,9 @@
       "year": 1889,
       "years_before_present": 137,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "border-collie",
@@ -1670,7 +1989,9 @@
       "year": 1893,
       "years_before_present": 133,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "boxer",
@@ -1689,7 +2010,9 @@
       "year": 1895,
       "years_before_present": 131,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "german-shorthaired-pointer",
@@ -1708,7 +2031,9 @@
       "year": 1897,
       "years_before_present": 129,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "american-pit-bull-terrier",
@@ -1727,7 +2052,9 @@
       "year": 1898,
       "years_before_present": 128,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "german-shepherd-dog",
@@ -1746,7 +2073,9 @@
       "year": 1899,
       "years_before_present": 127,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "belgian-malinois",
@@ -1765,7 +2094,9 @@
       "year": 1900,
       "years_before_present": 126,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "belgian-tervuren",
@@ -1784,7 +2115,9 @@
       "year": 1900,
       "years_before_present": 126,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "belgian-sheepdog",
@@ -1803,7 +2136,9 @@
       "year": 1900,
       "years_before_present": 126,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "bernese-mountain-dog",
@@ -1822,7 +2157,9 @@
       "year": 1905,
       "years_before_present": 121,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "afghan-hound",
@@ -1841,7 +2178,9 @@
       "year": 1907,
       "years_before_present": 119,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "brittany",
@@ -1860,7 +2199,9 @@
       "year": 1908,
       "years_before_present": 118,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "shetland-sheepdog",
@@ -1879,7 +2220,9 @@
       "year": 1909,
       "years_before_present": 117,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "rottweiler",
@@ -1898,7 +2241,9 @@
       "year": 1910,
       "years_before_present": 116,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "rhodesian-ridgeback",
@@ -1917,7 +2262,9 @@
       "year": 1922,
       "years_before_present": 104,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "east-siberian-laika",
@@ -1936,7 +2283,9 @@
       "year": 1923,
       "years_before_present": 103,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "shiba-inu",
@@ -1955,7 +2304,9 @@
       "year": 1934,
       "years_before_present": 92,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "cavalier-king-charles-spaniel",
@@ -1974,7 +2325,9 @@
       "year": 1935,
       "years_before_present": 91,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "american-staffordshire-terrier",
@@ -1993,7 +2346,9 @@
       "year": 1936,
       "years_before_present": 90,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "american-cocker-spaniel",
@@ -2012,7 +2367,9 @@
       "year": 1946,
       "years_before_present": 80,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "dogo-argentino",
@@ -2031,7 +2388,9 @@
       "year": 1947,
       "years_before_present": 79,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "cane-corso",
@@ -2050,7 +2409,9 @@
       "year": 1980,
       "years_before_present": 46,
       "favorite": false,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "silken-windhound",
@@ -2069,7 +2430,9 @@
       "year": 1985,
       "years_before_present": 41,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     },
     {
       "key": "tamaskan-dog",
@@ -2088,7 +2451,9 @@
       "year": 2006,
       "years_before_present": 20,
       "favorite": true,
-      "mrca": null
+      "mrca": null,
+      "village": null,
+      "date_source": "landrace"
     }
   ],
   "undated": [
@@ -2104,28 +2469,6 @@
       "primary_source_registry": "FCI (via anatoliandog.org mirror)",
       "primary_source_url": "https://www.anatoliandog.org/fci.htm",
       "mrca": null
-    },
-    {
-      "key": "siberian-husky",
-      "name": "Siberian Husky",
-      "confidence_tier": "vague",
-      "favorite": false,
-      "also_known_as": "",
-      "origin_country": "U.S.A.",
-      "notes": "Downgraded from anchor to vague and origin_estimate cleared 2026-08-09: the 9,500-year figure was an MRCA/ancestor-lineage date (Sinding et al. 2020, Zhokhov Island dog), not a Chukchi-specific founding date -- conflating the two is exactly the ambiguity ancestor_lineages.csv exists to resolve. See mrca_lineage_id for the (very well-evidenced) ancestor claim, which is unaffected by this change. Genuinely no separate landrace-tier date is known for this breed specifically.",
-      "recognition_year": "1930",
-      "primary_source_registry": "FCI",
-      "primary_source_url": "https://www.fci.be/Nomenclature/Standards/270g05-en.pdf",
-      "mrca": {
-        "lineage_id": "zhokhov-siberian-sled-dog",
-        "name": "Zhokhov Island Siberian sled dog",
-        "estimate_type": "years_ago",
-        "estimate_value_raw": "~9500 years ago",
-        "estimate_note": "Sinding et al. 2020 sequenced a ~9,500-year-old dog genome from Zhokhov Island, northeastern Siberia (associated with early sled-dog technology) alongside 10 modern Greenland sled dogs; found Siberian Husky, Alaskan Malamute, and Greenland sled dog all share the major part of their genome with this ancient dog. Greenland sled dog shows the least admixture with other dog populations since this split -- the basis of its 'oldest/most original breed' reputation (Guinness World Records, 2020) -- a claim about genetic purity, not an earlier founding date than Husky or Malamute, which trace to the identical ancestor.",
-        "years_before_present": 9500,
-        "source_citation": "Sinding et al. 2020, \"Arctic-adapted dogs emerged at the Pleistocene-Holocene transition,\" Science 368(6498):1495-1499",
-        "source_url": "https://www.science.org/doi/10.1126/science.aaz8599"
-      }
     },
     {
       "key": "greyhound",
@@ -2156,5 +2499,59 @@
   ],
   "total_researched": 157,
   "popularity_filter": 100,
-  "favorites_included_beyond_filter": 13
+  "favorites_included_beyond_filter": 13,
+  "lineage_included_beyond_filter": 2,
+  "village_dogs": [
+    {
+      "population_id": "taiwan-indonesian-village-dog-clade",
+      "name": "Taiwan / Indonesian village dog basal clade",
+      "region": "Taiwan; Indonesia (Island Southeast Asia)",
+      "diverged_from": "broader southern East Asian dog lineage",
+      "estimate_type": "years_ago",
+      "estimate_value_raw": "~9900 years ago",
+      "estimate_note": "Zhang et al. 2020 whole-genome analysis integrated a real Taiwan village dog sample with 97 published canid genomes; found it groups within a basal southern-East-Asia/Island-Southeast-Asia clade (the same clade that produced dingoes and New Guinea Singing Dogs), with clade divergence from Indonesian village dogs dated to ~9,900 years ago. Consistent with the broader <16,300-year regional dog-origin estimate south of the Yangtze River (Pang et al. 2009).",
+      "confidence_tier": "anchor",
+      "still_extant": true,
+      "years_before_present": 9900,
+      "related_breeds": [
+        {
+          "key": "taiwan-dog",
+          "name": "Taiwan Dog"
+        }
+      ],
+      "notes": "Pilot row for this schema (see village_dog_populations_schema.md). This date currently also lives in breed_origins.csv's taiwan-dog row (origin_estimate_value: ~9900 years ago) as a proxy for that breed's landrace date -- the same tier-conflation ancestor_lineages.csv was built to resolve, one tier over. Migrating taiwan-dog to reference this row via village_dog_population_id (with its own origin_estimate_type reset to none) is the natural first real usage of this file. Only clean village-dog pilot case as of 2026-08-09 -- Dingo/NGSD are feral/wild, a different category (see schema doc); Central Asian and African village dog populations are genetically established but have no dated divergence estimate in the literature found so far.",
+      "source_citation": "Zhang et al. 2020, \"Genomic regions under selection in the feralization of the dingoes,\" Nature Communications",
+      "source_url": "https://www.nature.com/articles/s41467-020-14515-6"
+    },
+    {
+      "population_id": "middle-eastern-village-dog-clade",
+      "name": "Middle Eastern village dog clade",
+      "region": "Middle East (Egypt, Lebanon, Qatar, Turkey, Afghanistan sampled)",
+      "diverged_from": "reciprocally monophyletic sister clade to the Southeast Asian village dog Y-chromosome lineage",
+      "estimate_type": "years_ago",
+      "estimate_value_raw": "~6820 years ago",
+      "estimate_note": "Brown et al. 2011 Y-chromosome (paternal lineage) analysis found Middle Eastern village dogs form a reciprocally monophyletic clade distinct from the Southeast Asian village dog clade, estimated age 6,820 BP (95% CI 3,931-9,709 BP). Desert-bred Salukis clustered entirely within this clade, sharing six haplotypes with regional village dogs.",
+      "confidence_tier": "anchor",
+      "still_extant": true,
+      "years_before_present": 6820,
+      "related_breeds": [
+        {
+          "key": "saluki",
+          "name": "Saluki"
+        }
+      ],
+      "notes": "Second real dated village-dog population found (2026-08-09), after the Taiwan/Indonesian pilot -- schema was deliberately not generalized further until a second real case showed up (see village_dog_populations_schema.md). Y-chromosome-only (paternal lineage), wide confidence interval (3,931-9,709 BP) -- weaker/narrower evidence than Zhang et al. 2020's whole-genome dating for the Taiwan/Indonesian clade, hence anchor not rich. Does not establish when the modern standardized Saluki breed itself was founded, only that it clusters within this dated regional clade -- Saluki's own tier-2 date (FCI/AKC's ~3300 BCE Sumerian-pendant claim) is separate, unaffected, and itself flagged in that row's notes as an unverified resemblance-based claim (same epistemic category as the debunked Pharaoh Hound/Ibizan Hound tomb-art dates) -- this clade date doesn't confirm or contradict that specific number, just establishes a deeper, genetically-real clade Saluki belongs to.",
+      "source_citation": "Brown et al. 2011, \"Phylogenetic distinctiveness of Middle Eastern and Southeast Asian village dog Y chromosomes illuminates dog origins,\" PLoS ONE 6(12):e28496",
+      "source_url": "https://doi.org/10.1371/journal.pone.0028496"
+    }
+  ],
+  "village_dogs_undated": [
+    {
+      "population_id": "central-asian-village-dog",
+      "name": "Central Asian village dog",
+      "region": "Central Asia",
+      "confidence_tier": "vague",
+      "notes": "Embark's Central Asian Village Dog page (embarkvet.com) claims \"over 15,000 years\" of ancestry with no citation whatsoever -- checked twice (2026-08-09), no footnotes/references/external links to any scientific source anywhere on the page. The real underlying research, Shannon et al. 2015 (PNAS, \"Genetic structure in village dogs reveals a Central Asian domestication origin\"), found Central Asia has the lowest linkage-disequilibrium decay among sampled village dog populations (their proxy for closest-to-ancestral), but explicitly states SNP array data cannot estimate the timing of ancient population events -- gives no date. The origin claim itself is also disputed (Wang et al. 2016 PNAS directly challenged it). No divergence-time estimate found anywhere for this population as of 2026-08-09 -- recorded as none/vague rather than using Embark's unsourced figure. Revisit if a real dated ancient-DNA study surfaces; see tasks.md and village_dog_populations_schema.md for the full history."
+    }
+  ]
 }

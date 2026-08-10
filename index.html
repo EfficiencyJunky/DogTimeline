@@ -15,14 +15,18 @@
   <div class="mode-toggle">
     <button data-mode="founding" class="active" title="Plot each breed by when its own population/landrace became distinct">Breed founding</button>
     <button data-mode="ancestor" title="Plot each breed by its oldest known common ancestor (MRCA) — genetic-purity/lineage-depth, not founding date">Oldest common ancestor</button>
+    <button data-mode="village" title="Extant, unmanaged, human-commensal dog populations that never became a breed — plotted as a bar from divergence to today, since they're still around">Village dog populations</button>
   </div>
   <div class="legend">
     <span class="legend-founding"><span class="dot" style="background:var(--rich)"></span>rich (multiple dated sources)</span>
     <span class="legend-founding"><span class="dot" style="background:var(--anchor)"></span>anchor (1–2 dates)</span>
     <span class="legend-founding"><span class="dot" style="background:var(--vague)"></span>vague</span>
     <span class="legend-ancestor"><span class="dot" style="background:var(--ancestor)"></span>ancestor lineage (MRCA)</span>
+    <span class="legend-village"><span class="dot" style="background:var(--village)"></span>divergence date</span>
+    <span class="legend-village" title="Bar extends to today because the population is still around, unmanaged"><span class="bar-swatch"></span>still extant</span>
     <span><span class="star" style="color:var(--favorite)">&#9733;</span>favorite</span>
     <span class="legend-founding" title="Date reflects the associated culture/people, not direct evidence of the dog itself">* = culture-inferred date</span>
+    <span class="legend-founding" title="This breed has no landrace date of its own — borrowed from its oldest common ancestor or village dog population">† = borrowed from a deeper tier</span>
   </div>
   <div class="scale-note" id="scale-note">Log scale — recent centuries are stretched, deep history is compressed</div>
 </div>
