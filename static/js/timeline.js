@@ -130,6 +130,16 @@
   var FAN_RISE = 55;     // vertical distance from the descendant row up to the ancestor node
   var FAN_SPACING = 90;  // horizontal spacing between fanned-out descendant markers
 
+  // Ancestor-view vertical metrics. A "lane" here holds a whole cluster (ancestor
+  // label + diamond + FAN_RISE + descendant row + descendant labels), not a single
+  // marker the way LANE_HEIGHT assumes in the founding view -- stepping lanes by
+  // LANE_HEIGHT stacked clusters 28px apart when each is ~130px tall, which is what
+  // made them overlap regardless of how well they were packed horizontally.
+  var ANC_STEM_BASE = 40; // axis -> descendant row; wide enough for a descendant label to sit between them
+  var ANC_HEAD = 34;      // ancestor node -> past its own label
+  var ANC_LANE_STEP = ANC_STEM_BASE + FAN_RISE + ANC_HEAD; // full vertical span of one cluster
+  var ANC_LABEL_CHAR_W = 6.0; // approx px/char for .ancestor-label (10.5px, 600 weight)
+
   // ---- mode state ----
   var mode = "founding"; // "founding" | "ancestor" | "village"
   var currentBreeds = breeds;
@@ -233,18 +243,42 @@
     clusters.forEach(function (c) { c._x = xOf(c.years_before_present); });
     var sorted = clusters.slice().sort(function (a, b) { return a._x - b._x; });
 
-    var laneRightEdge = [];
-    sorted.forEach(function (c) {
+    // A cluster must reserve room for whichever is wider: its fanned descendant row,
+    // or its own lineage label (e.g. "Kamikuroiwa Rock Shelter Jomon dog (M1
+    // haplotype)" is far wider than its three-marker fan).
+    function halfWidthOf(c) {
       var fanCount = c.members.length + c.unplottedRelated.length;
-      var halfWidth = (fanCount - 1) * FAN_SPACING / 2 + MIN_GAP / 2;
-      var lane = 0;
-      while (laneRightEdge[lane] !== undefined && (c._x - halfWidth) < laneRightEdge[lane]) lane++;
-      laneRightEdge[lane] = c._x + halfWidth;
-      c._lane = lane;
-    });
-    var maxLane = laneRightEdge.length - 1;
-    var axisY = MARGIN_TOP + (maxLane + 1) * LANE_HEIGHT + STEM_BASE + FAN_RISE;
-    var logicalHeight = axisY + 70;
+      var fanHalf = (fanCount - 1) * FAN_SPACING / 2 + MIN_GAP / 2;
+      var labelHalf = c.name.length * ANC_LABEL_CHAR_W / 2 + 10;
+      return Math.max(fanHalf, labelHalf);
+    }
+
+    // Bisected layout, same idea as the founding view: the axis runs through the
+    // middle and lineages alternate above/below in date order, so two lineages that
+    // sit close together on the x-axis are never in the same vertical band.
+    sorted.forEach(function (c, i) { c._side = i % 2 === 0 ? -1 : 1; });
+
+    // Then lane-pack each side independently -- only needed when two lineages on the
+    // SAME side still overlap horizontally, which alternation makes rare.
+    function packSide(side) {
+      var laneRightEdge = [];
+      sorted.forEach(function (c) {
+        if (c._side !== side) return;
+        var halfWidth = halfWidthOf(c);
+        var lane = 0;
+        while (laneRightEdge[lane] !== undefined && (c._x - halfWidth) < laneRightEdge[lane]) lane++;
+        laneRightEdge[lane] = c._x + halfWidth;
+        c._lane = lane;
+      });
+      return laneRightEdge.length - 1; // -1 when this side is empty
+    }
+    var aboveMaxLane = packSide(-1);
+    var belowMaxLane = packSide(1);
+
+    var TICK_MARGIN = 24; // reserved space for tick date labels, top and bottom
+    var axisY = TICK_MARGIN + (aboveMaxLane + 1) * ANC_LANE_STEP;
+    var gridBottomY = axisY + (belowMaxLane + 1) * ANC_LANE_STEP;
+    var logicalHeight = gridBottomY + TICK_MARGIN + 20;
 
     svg.setAttribute("viewBox", "0 0 " + LOGICAL_WIDTH + " " + logicalHeight);
     svg.setAttribute("width", LOGICAL_WIDTH);
@@ -253,15 +287,21 @@
     svg.appendChild(el("line", { x1: MARGIN_L, y1: axisY, x2: LOGICAL_WIDTH - MARGIN_R, y2: axisY, class: "axis-line" }));
     TICKS.forEach(function (t) {
       var x = xOf(t);
-      svg.appendChild(el("line", { x1: x, y1: MARGIN_TOP - 10, x2: x, y2: axisY, class: "gridline" }));
-      var label = el("text", { x: x, y: axisY + 20, class: "tick-label", "text-anchor": "middle" });
-      label.textContent = t === 10 ? "Today" : fmtYbp(t);
-      svg.appendChild(label);
+      svg.appendChild(el("line", { x1: x, y1: TICK_MARGIN - 14, x2: x, y2: gridBottomY + 14, class: "gridline" }));
+      var text = t === 10 ? "Today" : fmtYbp(t);
+      var topLabel = el("text", { x: x, y: 16, class: "tick-label", "text-anchor": "middle" });
+      topLabel.textContent = text;
+      svg.appendChild(topLabel);
+      var bottomLabel = el("text", { x: x, y: gridBottomY + 34, class: "tick-label", "text-anchor": "middle" });
+      bottomLabel.textContent = text;
+      svg.appendChild(bottomLabel);
     });
 
     sorted.forEach(function (c) {
-      var descendantY = axisY - STEM_BASE - c._lane * LANE_HEIGHT;
-      var ancestorY = descendantY - FAN_RISE;
+      // s = -1 above the axis, +1 below; every offset below is mirrored through it.
+      var s = c._side;
+      var descendantY = axisY + s * (ANC_STEM_BASE + c._lane * ANC_LANE_STEP);
+      var ancestorY = descendantY + s * FAN_RISE;
 
       // trunk: the one line actually anchored to the real date on the axis
       svg.appendChild(el("line", { x1: c._x, y1: axisY, x2: c._x, y2: ancestorY, class: "stem trunk" }));
@@ -273,8 +313,11 @@
         class: "marker ancestor-node"
       });
       ancestorG.appendChild(ancestorMarker);
+      // lineage label sits on the far side of the diamond, away from the axis
       var ancestorLabel = el("text", {
-        x: c._x, y: ancestorY - RADIUS * 1.7 - 6, class: "marker-label ancestor-label", "text-anchor": "middle"
+        x: c._x,
+        y: s < 0 ? ancestorY - RADIUS * 1.7 - 6 : ancestorY + RADIUS * 1.7 + 16,
+        class: "marker-label ancestor-label", "text-anchor": "middle"
       });
       ancestorLabel.textContent = c.name;
       ancestorG.appendChild(ancestorLabel);
@@ -300,7 +343,8 @@
         g.appendChild(marker);
 
         var label = el("text", {
-          x: mx, y: my + RADIUS + 16, class: "marker-label", "text-anchor": "middle"
+          x: mx, y: s < 0 ? my + RADIUS + 16 : my - RADIUS - 6,
+          class: "marker-label", "text-anchor": "middle"
         });
         label.textContent = b.name.length > 20 ? b.name.slice(0, 18) + "…" : b.name;
         g.appendChild(label);
@@ -330,7 +374,8 @@
         g.appendChild(marker);
 
         var label = el("text", {
-          x: mx, y: my + RADIUS + 16, class: "marker-label unplotted-label", "text-anchor": "middle"
+          x: mx, y: s < 0 ? my + RADIUS + 16 : my - RADIUS - 6,
+          class: "marker-label unplotted-label", "text-anchor": "middle"
         });
         label.textContent = b.name.length > 20 ? b.name.slice(0, 18) + "…" : b.name;
         g.appendChild(label);
