@@ -75,7 +75,10 @@ svg { display: block; }
 .marker.dim + .fallback-ring { opacity: 0.05; }
 .trunk { stroke-width: 2; }
 .branch { stroke: var(--ancestor); stroke-width: 1.2; opacity: 0.55; }
+.branch.unplotted { stroke-dasharray: 2.5 2; opacity: 0.35; }
 .ancestor-label { fill: var(--ancestor); font-weight: 600; }
+.marker.ancestor-unplotted { fill: none; stroke: var(--ancestor); stroke-width: 1.5; stroke-dasharray: 2.5 2; opacity: 0.6; cursor: default; }
+.marker-label.unplotted-label { fill: var(--muted); font-style: italic; }
 .village-bar { stroke: var(--village); stroke-width: 6; stroke-linecap: round; cursor: pointer; }
 .village-bar-end { fill: var(--village); opacity: 0.35; stroke: var(--village); stroke-width: 1.5; }
 .marker.village-node { fill: var(--village); stroke: #b5810e; }

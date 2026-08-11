@@ -85,7 +85,8 @@
         ancestor_lineage_name: b.mrca.name,
         lineage_id: b.mrca.lineage_id,
         source_citation: b.mrca.source_citation,
-        source_url: b.mrca.source_url
+        source_url: b.mrca.source_url,
+        related_breeds: b.mrca.related_breeds
       });
     });
     return out;
@@ -108,13 +109,20 @@
           source_citation: b.source_citation,
           source_url: b.source_url,
           years_before_present: b.years_before_present,
+          related_breeds: b.related_breeds || [],
           members: []
         };
         order.push(id);
       }
       map[id].members.push(b);
     });
-    return order.map(function (id) { return map[id]; });
+    return order.map(function (id) {
+      var c = map[id];
+      var memberKeys = {};
+      c.members.forEach(function (m) { memberKeys[m.key] = true; });
+      c.unplottedRelated = c.related_breeds.filter(function (b) { return !memberKeys[b.key]; });
+      return c;
+    });
   }
 
   var ancestorBreeds = buildAncestorDataset();
@@ -227,7 +235,8 @@
 
     var laneRightEdge = [];
     sorted.forEach(function (c) {
-      var halfWidth = (c.members.length - 1) * FAN_SPACING / 2 + MIN_GAP / 2;
+      var fanCount = c.members.length + c.unplottedRelated.length;
+      var halfWidth = (fanCount - 1) * FAN_SPACING / 2 + MIN_GAP / 2;
       var lane = 0;
       while (laneRightEdge[lane] !== undefined && (c._x - halfWidth) < laneRightEdge[lane]) lane++;
       laneRightEdge[lane] = c._x + halfWidth;
@@ -276,7 +285,7 @@
       svg.appendChild(ancestorG);
 
       // descendants, fanned out below the ancestor, each linked to it by a branch line
-      var n = c.members.length;
+      var n = c.members.length + c.unplottedRelated.length;
       c.members.forEach(function (b, i) {
         var offset = (i - (n - 1) / 2) * FAN_SPACING;
         var mx = c._x + offset, my = descendantY;
@@ -303,6 +312,34 @@
 
         svg.appendChild(g);
         markerNodes[b.key] = { g: g, circle: marker, label: label };
+      });
+
+      // related breeds named in the lineage's research but not yet in the dataset
+      // (no landrace row, no mrca_lineage_id of their own) -- drawn hollow/dashed
+      // and non-interactive so they read as "known but unresearched," not as a
+      // fully-dated breed sharing the same visual weight as real members.
+      c.unplottedRelated.forEach(function (b, j) {
+        var i = c.members.length + j;
+        var offset = (i - (n - 1) / 2) * FAN_SPACING;
+        var mx = c._x + offset, my = descendantY;
+
+        svg.appendChild(el("line", { x1: c._x, y1: ancestorY, x2: mx, y2: my, class: "branch unplotted" }));
+
+        var g = el("g", { "data-key": b.key });
+        var marker = el("circle", { cx: mx, cy: my, r: RADIUS, class: "marker ancestor-unplotted" });
+        g.appendChild(marker);
+
+        var label = el("text", {
+          x: mx, y: my + RADIUS + 16, class: "marker-label unplotted-label", "text-anchor": "middle"
+        });
+        label.textContent = b.name.length > 20 ? b.name.slice(0, 18) + "…" : b.name;
+        g.appendChild(label);
+
+        g.addEventListener("mouseenter", function (ev) { showUnplottedTooltip(b, c, ev); });
+        g.addEventListener("mousemove", function (ev) { moveTooltip(ev); });
+        g.addEventListener("mouseleave", hideTooltip);
+
+        svg.appendChild(g);
       });
     });
 
@@ -439,6 +476,13 @@
     tooltip.style.display = "block";
     moveTooltip(ev);
   }
+  function showUnplottedTooltip(b, c, ev) {
+    tooltip.innerHTML =
+      '<div class="name">' + escapeHtml(b.name) + '</div>' +
+      '<div class="note">Named in ' + escapeHtml(c.name) + '’s research as related, but not yet in this dataset — no date of its own to plot.</div>';
+    tooltip.style.display = "block";
+    moveTooltip(ev);
+  }
   function showVillageBreedTooltip(b, p, ev) {
     tooltip.innerHTML =
       '<div class="name">' + escapeHtml(b.name) + '</div>' +
@@ -499,12 +543,17 @@
     return '<div class="field">' + (label ? '<div class="field-label">' + label + '</div>' : '') + '<div>' + html + '</div></div>';
   }
   function openAncestorDetail(c) {
+    var unplottedRelated = c.unplottedRelated || [];
     detailBody.innerHTML =
       '<h2>' + escapeHtml(c.name) + '</h2>' +
       '<div class="sub" style="color:var(--muted);font-size:12px">Most recent common ancestor (MRCA)</div>' +
       field("Estimated age", escapeHtml(c.estimate_value_raw) + ' (' + escapeHtml(c.estimate_type) + ')') +
       field("Note", formatNote(c.estimate_note)) +
       field("Shared by", c.members.map(function (m) { return escapeHtml(m.name); }).join(", ")) +
+      (unplottedRelated.length
+        ? field("Also connected in research (not otherwise plotted)",
+            unplottedRelated.map(function (b) { return escapeHtml(b.name); }).join(", "))
+        : "") +
       (c.source_url
         ? field("Source", '<a href="' + escapeAttr(c.source_url) + '" target="_blank" rel="noopener">' +
               escapeHtml(c.source_citation || c.source_url) + '</a>')
